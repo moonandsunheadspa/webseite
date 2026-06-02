@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gutscheine – Moon & Sun Head Spa St. Pölten</title>
+  <meta name="description" content="Verschenke pure Auszeit. Wertgutscheine von Moon & Sun Head Spa – für alle Rituale einlösbar. 50, 100, 150 oder 170 Euro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .gutschein-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+    .gutschein-card {
+      border: 1px solid rgba(201,169,110,0.35);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      transition: border-color 0.4s, background 0.4s;
+    }
+    .gutschein-card:hover {
+      border-color: var(--gold);
+      background: rgba(201,169,110,0.04);
+    }
+    .gutschein-betrag {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      color: var(--gold-light);
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+    .gutschein-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-top: 0.7rem;
+    }
+    .iban-box {
+      border: 1px solid rgba(201,169,110,0.25);
+      padding: 2.5rem 3rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+    .iban-box .iban-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+    .iban-box .iban-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      color: #ffffff;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+    .iban-box .iban-detail {
+      font-size: 0.82rem;
+      color: #ffffff;
+      margin-top: 0.3rem;
+    }
+    .ablauf-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.8rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(201,169,110,0.08);
+    }
+    .ablauf-step:last-child { border-bottom: none; }
+    .ablauf-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      color: var(--gold);
+      min-width: 2.5rem;
+      line-height: 1;
+    }
+    .ablauf-text h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: var(--gold-light);
+      margin-bottom: 0.4rem;
+    }
+    .ablauf-text p {
+      font-size: 0.88rem;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+    .hinweis-box {
+      border-left: 2px solid rgba(201,169,110,0.3);
+      padding: 1.2rem 1.8rem;
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+    @media (max-width: 600px) {
+      .iban-box { padding: 2rem 1.2rem; }
+      .iban-box .iban-number { font-size: 1.2rem; }
+      .gutschein-betrag { font-size: 2.4rem; }
+    }
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <div class="subpage-banner">
+    <span class="eyebrow">Verschenke pure Auszeit</span>
+    <h1>Gutscheine</h1>
+    <p>Ein Geschenk, das wirklich ankommt. Für dich selbst oder für jemanden, dem du etwas Besonderes gönnen möchtest.</p>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section-dark">
+    <div class="container-narrow">
+      <span class="eyebrow fade-in">Wertgutscheine</span>
+      <h2 class="fade-in fade-in-delay-1">Für alle Rituale einlösbar</h2>
+      <p class="fade-in fade-in-delay-2" style="color:#ffffff; margin-top:1.2rem;">Unsere Gutscheine sind Wertgutscheine. Das bedeutet, sie sind frei für jedes unserer angebotenen Rituale verwendbar. Du wählst einfach einen Betrag, der dir entspricht, und die beschenkte Person entscheidet bei der Terminbuchung, welches Ritual sie damit genießen möchte.</p>
+    </div>
+  </section>
+
+  <div class="section-divider fade-in"><span>✦</span></div>
+
+  <!-- ABLAUF -->
+  <section class="section-dark">
+    <div class="container-narrow">
+      <span class="eyebrow fade-in">So einfach geht es</span>
+      <h2 class="fade-in fade-in-delay-1">Der Weg zu deinem Gutschein</h2>
+
+      <div style="margin-top:2.5rem;">
+        <div class="ablauf-step fade-in">
+          <div class="ablauf-number">1</div>
+          <div class="ablauf-text">
+            <h4>Betrag wählen</h4>
+            <p>Du entscheidest, welchen Wert dein Gutschein haben soll. Wähle zwischen 50, 100, 150 oder 170 Euro, je nachdem, was du verschenken oder dir selbst gönnen möchtest.</p>
+          </div>
+        </div>
+        <div class="ablauf-step fade-in">
+          <div class="ablauf-number">2</div>
+          <div class="ablauf-text">
+            <h4>Betrag überweisen</h4>
+            <p>Überweise den gewählten Betrag auf unser Konto. Bitte gib im Verwendungszweck den Namen der Person an, für die der Gutschein gedacht ist. Wenn bereits bekannt, kannst du auch das gewünschte Ritual dazuschreiben. Falls noch nicht klar, ist das kein Problem und kein Muss.</p>
+          </div>
+        </div>
+        <div class="ablauf-step fade-in">
+          <div class="ablauf-number">3</div>
+          <div class="ablauf-text">
+            <h4>Gutschein als PDF erhalten</h4>
+            <p>Sobald deine Überweisung bei uns eingelangt ist, erhältst du deinen Gutschein als schönes PDF per E-Mail, gemeinsam mit der Rechnung. Das dauert in der Regel wenige Tage.</p>
+          </div>
+        </div>
+        <div class="ablauf-step fade-in">
+          <div class="ablauf-number">4</div>
+          <div class="ablauf-text">
+            <h4>Termin ausmachen und genießen</h4>
+            <p>Mit dem Gutschein in der Hand oder auch schon davor kannst du jederzeit einen Termin buchen. Einfach per Mail, WhatsApp oder Anruf bei uns melden, und wir freuen uns, alles für dich zu organisieren.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- IBAN BOX -->
+      <div class="iban-box fade-in" style="margin-top:3.5rem;">
+        <div class="iban-label">Bankverbindung</div>
+        <div class="iban-number">AT57 1500 0002 3111 5262</div>
+        <div class="iban-detail">BIC: OBKLAT2L</div>
+        <div class="iban-detail" style="margin-top:0.8rem;">Oberbank &nbsp;·&nbsp; Aysun Arslan</div>
+        <div class="iban-detail" style="margin-top:1.2rem; color:#ffffff; font-size:0.858rem;">Verwendungszweck: Name der beschenkten Person, wenn bekannt auch das gewünschte Ritual</div>
+      </div>
+
+      <!-- HINWEISE -->
+      <div class="hinweis-box fade-in">
+        <p><strong style="color:var(--gold-light);">Noch kein PDF erhalten, aber Termin gewünscht?</strong><br>
+        Kein Problem. Wenn du bereits überwiesen hast und auf dein PDF wartest, kannst du selbstverständlich schon einen Termin ausmachen. Gib uns beim Buchen einfach kurz Bescheid, dass du einen Gutschein bezahlt hast und auf die Bestätigung wartest. Du kannst deinen Termin ohne weiteres wahrnehmen.</p>
+      </div>
+
+      <div class="hinweis-box fade-in" style="margin-top:1.5rem;">
+        <p><strong style="color:var(--gold-light);">Gutscheine bitte nicht vor Ort abholen.</strong><br>
+        Da alle unsere Rituale vollkommene Ruhe erfordern, bitten wir dich, deinen Gutschein ausschließlich digital per E-Mail zu beziehen. Ein Vorbeikommen ohne Termin würde laufende Rituale stören. Bitte lies dazu auch unsere <a href="rahmenbedingungen.html" style="color:var(--gold-light);">Rahmenbedingungen</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider fade-in"><span>✦</span></div>
+
+  <!-- CTA -->
+  <section style="background:var(--black);padding:6rem 2rem;text-align:center;">
+    <span class="eyebrow fade-in">Bereit?</span>
+    <h2 class="fade-in fade-in-delay-1">Wir freuen uns auf deine Nachricht.</h2>
+    <p class="fade-in fade-in-delay-2" style="color:#ffffff; margin-top:1rem; margin-bottom:2.5rem;">Bei Fragen zum Gutschein erreichst du uns jederzeit per Mail, WhatsApp oder Anruf.</p>
+    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-beige fade-in fade-in-delay-2">Termin buchen →</a>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.getElementById('header-placeholder').innerHTML = renderSubpageHeader('../');
+    document.getElementById('footer-placeholder').innerHTML = renderFooter('../');
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

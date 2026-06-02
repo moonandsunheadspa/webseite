@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon & Sun Head Spa St. Pölten – Head Spa, ASMR & Tiefenentspannung</title>
+  <meta name="description" content="Head Spa Rituale, ASMR-Entspannung & Kobido Lifting in St. Pölten. Das markengeschützte Astral Aura Ritual Head Spa® – nachhaltige Tiefenentspannung für Körper, Nervensystem & Haut. Jetzt Termin buchen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ---- HOME-SPECIFIC STYLES ---- */
+    #homeHero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 700px;
+      overflow: hidden;
+    }
+    #homeHero img.hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 115%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    /* Gradient fade to black at bottom */
+    #homeHero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 35%;
+      background: linear-gradient(to bottom, transparent, var(--black));
+      pointer-events: none;
+    }
+
+    /* Transparent nav on hero */
+    #homeNav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0.9rem 2.5rem;
+      transition: background 0.5s, padding 0.4s, border-color 0.5s;
+      border-bottom: 1px solid transparent;
+    }
+    #homeNav.scrolled {
+      background: rgba(10,10,10,0.95);
+      padding: 1rem 2.5rem;
+      border-bottom-color: rgba(201,169,110,0.2);
+      backdrop-filter: blur(8px);
+    }
+    #homeNav .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    #homeNav .nav-links a {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.788rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1a1008;
+      transition: color 0.3s;
+      white-space: nowrap;
+    }
+    #homeNav.scrolled .nav-links a { color: var(--white); }
+    #homeNav .nav-links a:hover { color: var(--gold-dark); }
+    #homeNav.scrolled .nav-links a:hover { color: var(--gold); }
+
+    #homeNav .nav-dropdown > a::after { content: ' ▾'; font-size: 0.55rem; }
+    #homeNav .dropdown-menu a { color: var(--black) !important; }
+
+    #homeNav .btn-nav-home {
+      background: var(--gold);
+      color: var(--black);
+      border: none;
+      padding: 0.55rem 1.4rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.751rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: none;
+      white-space: nowrap;
+    }
+    #homeNav.scrolled .btn-nav-home { background: var(--gold); color: var(--black); }
+    #homeNav .btn-nav-home:hover { background: var(--gold); color: var(--black); }
+
+    #homeNav .phone-home {
+      font-size: 0.788rem;
+      letter-spacing: 0.1em;
+      color: #1a1008;
+      white-space: nowrap;
+    }
+    #homeNav.scrolled .phone-home { color: var(--gold); }
+
+    /* CTA inside hero — centered, on the waves above Moon & Sun */
+    .hero-cta-wrap {
+      position: absolute;
+      bottom: 41%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 10;
+    }
+
+    /* Hero hamburger - immer sichtbar */
+    #homeHamburger {
+      background: rgba(0,0,0,0.55);
+      border-radius: 6px;
+      padding: 10px;
+      display: none;
+    }
+    #homeHamburger span {
+      background: #ffffff !important;
+      width: 26px;
+      height: 2px;
+    }
+    @media (max-width: 768px) {
+      #homeHamburger {
+        display: flex !important;
+        background: #a07840;
+        border-radius: 6px;
+        padding: 10px;
+      }
+    }
+
+    /* ---- MOBILE FIXES ---- */
+    @media (max-width: 768px) {
+      .empfang-wrap img,
+      .regenbogenbrause-wrap img,
+      .studio-photo-wrap img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+      .behandlungsraum-wrap img {
+        width: 100%;
+        max-width: 100%;
+        min-width: unset;
+        object-fit: contain;
+      }
+    }
+
+    /* ---- INTRO SECTION ---- */
+    .intro-section {
+      background: var(--black);
+      padding: 7rem 0 5rem;
+      text-align: center;
+    }
+    .intro-section h2 { color: var(--white); max-width: 800px; margin: 0 auto 2rem; }
+    .intro-section p { color: #ffffff; max-width: 680px; margin: 0 auto 1.2rem; }
+    .big-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.5rem, 3vw, 2.4rem);
+      font-style: italic;
+      color: var(--gold-light);
+      margin: 2rem auto;
+      max-width: 700px;
+      line-height: 1.4;
+    }
+
+    /* ---- FOR WHOM ---- */
+    .for-whom { background: var(--black); padding: 5rem 0; }
+    .for-whom-inner { max-width: 800px; margin: 0 auto; padding: 0 2rem; text-align: center; }
+    .for-whom p { color: #ffffff; margin-bottom: 1rem; }
+
+    /* ---- THREE PILLARS ---- */
+    .pillars { background: #0d0d0d; padding: 6rem 0; }
+    .pillar-card {
+      padding: 2.5rem;
+      border: 1px solid rgba(201,169,110,0.18);
+      text-align: center;
+      transition: border-color 0.4s, background 0.4s;
+    }
+    .pillar-card:hover { border-color: var(--gold); background: rgba(201,169,110,0.04); }
+    .pillar-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      color: var(--gold);
+    }
+    .pillar-card h3 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--white); }
+    .pillar-card p { color: #ffffff; font-size: 18px; }
+
+    /* ---- SIGNATURE RITUAL ---- */
+    .signature { background: var(--black); padding: 7rem 0; text-align: center; }
+    .signature h2 { max-width: 700px; margin: 1rem auto 2rem; }
+    .signature p { color: #ffffff; max-width: 680px; margin: 0 auto 1.5rem; }
+
+    /* ---- OFFERS GRID ---- */
+    .offers-section { background: #0d0d0d; padding: 6rem 0; }
+    .offer-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(201,169,110,0.15);
+      padding: 2.5rem;
+      transition: border-color 0.4s, background 0.4s, transform 0.4s;
+    }
+    .offer-card:hover {
+      border-color: rgba(201,169,110,0.5);
+      background: rgba(201,169,110,0.04);
+      transform: translateY(-4px);
+    }
+    .offer-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--white); }
+    .offer-card p { color: #ffffff; font-size: 18px; margin-bottom: 1.8rem; }
+    .offer-card a.offer-link {
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid rgba(201,169,110,0.3);
+      padding-bottom: 2px;
+      transition: border-color 0.3s;
+    }
+    .offer-card a.offer-link:hover { border-color: var(--gold); }
+
+    /* ---- REVIEWS PREVIEW ---- */
+    .reviews-preview { background: var(--black); padding: 6rem 0; }
+    .review-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(201,169,110,0.12);
+      padding: 2.5rem;
+    }
+    .review-stars { color: #f5c518; font-size: 1rem; letter-spacing: 0.1em; margin-bottom: 1rem; }
+    .review-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 18px;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .review-name {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ---- VISIT SECTION ---- */
+    .visit-section { background: #0d0d0d; padding: 6rem 0; }
+    .visit-inner { max-width: 700px; margin: 0 auto; text-align: center; padding: 0 2rem; }
+    .visit-inner p { color: #ffffff; margin-bottom: 1rem; }
+
+    /* ---- REGENBOGENBRAUSE BILD ---- */
+    .regenbogenbrause-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+      background: var(--black);
+    }
+    .regenbogenbrause-wrap img {
+      width: auto;
+      max-width: 634px;
+      height: auto;
+      display: block;
+    }
+
+    /* ---- EMPFANG BILD ---- */
+    .empfang-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+      background: var(--black);
+    }
+    .empfang-wrap img {
+      width: auto;
+      max-width: 528px;
+      height: auto;
+      display: block;
+    }
+
+    /* ---- BEHANDLUNGSRAUM BILD ---- */
+    .behandlungsraum-wrap {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+      background: var(--black);
+      flex-wrap: wrap;
+    }
+    .behandlungsraum-wrap img {
+      width: calc(50% - 0.75rem);
+      max-width: 484px;
+      min-width: 280px;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      .regenbogenbrause-wrap img,
+      .empfang-wrap img,
+      .studio-photo-wrap img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+      }
+      .behandlungsraum-wrap img {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: unset !important;
+      }
+    }
+
+    /* ---- FINAL CTA ---- */
+    .final-cta {
+      background: linear-gradient(135deg, #0d0d0d 0%, #111008 100%);
+      border-top: 1px solid rgba(201,169,110,0.15);
+      border-bottom: 1px solid rgba(201,169,110,0.15);
+      padding: 8rem 2rem;
+      text-align: center;
+    }
+    .final-cta h2 { max-width: 650px; margin: 0 auto 1.5rem; }
+    .final-cta p { color: #ffffff; margin-bottom: 2.5rem; }
+
+    /* ---- STUDIO PHOTO ---- */
+    .studio-photo-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+      background: var(--black);
+      overflow: hidden;
+    }
+    .studio-photo-wrap img {
+      width: auto;
+      max-width: 700px;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      object-position: center 10%;
+      max-height: 504px;
+    }
+
+    @media (max-width: 768px) {
+      #homeNav .nav-links { display: none; }
+      #homeHamburger { display: flex; }
+      .hero-cta-wrap { bottom: 8%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============ HOME NAV (transparent, on hero) ============ -->
+<nav id="homeNav">
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <div class="nav-dropdown" style="position:relative;">
+      <a href="#">Angebote</a>
+      <div class="dropdown-menu">
+        <a href="pages/angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a>
+        <a href="pages/angebote-together.html">Astral Aura Together</a>
+        <a href="pages/angebote-nacken.html">ASMR Nacken- & Schulter-Rituale</a>
+        <a href="pages/angebote-kobido.html">ASMR Kobido Lifting & Kosmetik</a>
+      </div>
+    </div>
+    <a href="pages/ueber-uns.html">Über uns</a>
+    <a href="pages/bewertungen.html">Bewertungen</a>
+    <a href="pages/preisliste.html">Preisliste</a>
+    <a href="pages/gutscheine.html">Gutscheine</a>
+    <a href="pages/schulungen.html">Schulungen</a>
+    <a href="pages/rahmenbedingungen.html">Rahmenbedingungen</a>
+    <span class="phone-home">+43 690 10085496</span>
+    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-nav-home">Termin buchen</a>
+  </div>
+  <button class="hamburger" id="homeHamburger" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav Overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <button class="close-btn" id="mobileNavClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="pages/angebote-astral-aura.html">Astral Aura Ritual</a>
+  <a href="pages/angebote-together.html">Astral Aura Together</a>
+  <a href="pages/angebote-nacken.html">Nacken & Schulter</a>
+  <a href="pages/angebote-kobido.html">Kobido Lifting</a>
+  <a href="pages/ueber-uns.html">Über uns</a>
+  <a href="pages/bewertungen.html">Bewertungen</a>
+  <a href="pages/preisliste.html">Preisliste</a>
+  <a href="pages/gutscheine.html">Gutscheine</a>
+  <a href="pages/schulungen.html">Schulungen</a>
+  <a href="pages/rahmenbedingungen.html">Rahmenbedingungen</a>
+  <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="mobile-book-btn btn-beige">Termin buchen</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="homeHero">
+  <img src="images/hero.png" alt="Moon & Sun Head Spa – Astral Aura Head Spa Ritual" class="hero-img">
+
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="intro-section">
+  <div class="container">
+    <span class="eyebrow fade-in">Was Moon & Sun Head Spa besonders macht</span>
+    <h2 class="fade-in fade-in-delay-1">Viele unserer Gäste sagen danach</h2>
+    <p class="big-quote fade-in fade-in-delay-2">„Ich kann mich nicht erinnern, wann ich zuletzt so entspannt war!"</p>
+    <p class="fade-in fade-in-delay-3">Das hören wir oft. Und es überrascht uns nicht mehr, denn unsere Behandlungen wirken auf einer Ebene, die ein klassisches Spa selten erreicht. Nicht weil wir lauter sind. Sondern weil wir stiller sind.</p>
+    <p class="fade-in">Durch die Verbindung aus ASMR-Impulsen, Reiki-Energiearbeit, manueller Kobido Lifting-Massage und dem meditativem Fließen der Regenbogenbrause gelangt dein Nervensystem in einen Zustand echter Regeneration. Einen Zustand, den viele Menschen im Alltag kaum noch kennen: vollständige, körperliche Stille.</p>
+    <div style="margin-top: 3rem;" class="fade-in">
+      <a href="pages/angebote-astral-aura.html" class="btn-primary">Unsere Angebote entdecken →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGENBOGENBRAUSE BILD ============ -->
+<div class="regenbogenbrause-wrap fade-in">
+  <img src="images/regenbogenbrause.png" alt="Moon & Sun Head Spa – Regenbogenbrause">
+</div>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- ============ FOR WHOM ============ -->
+<section class="for-whom">
+  <div class="for-whom-inner">
+    <span class="eyebrow fade-in">Du bist hier richtig, wenn …</span>
+    <h2 class="fade-in fade-in-delay-1">Du dich nach einem Ort sehnst, der wirklich nur dir gehört.</h2>
+    <p class="fade-in fade-in-delay-2">Du trägst viel. Verpflichtungen, Gedanken, Verantwortung. Vielleicht schläfst du nicht mehr so tief wie früher. Vielleicht spürst du, dass du müde bist, aber Schlafen allein reicht nicht mehr aus, um wirklich zu regenerieren.</p>
+    <p class="fade-in">Vielleicht hast du Kopfschmerzen, die immer wiederkehren. Oder ein Schultern-Nacken-Bereich, der sich anfühlt wie Beton. Vielleicht bist du hochsensibel, und die Welt ist manchmal einfach zu laut.</p>
+    <p class="fade-in">Unsere Rituale wurden genau für dich geschaffen. Sie sind so sanft, dass sie selbst für Menschen geeignet sind, die klassische Massagen nicht vertragen, auch für Gäste, die sich während oder nach einer Krebserkrankung etwas wohltuend Achtsames gönnen möchten.</p>
+    <p class="fade-in" style="font-style:italic; color: var(--gold-light); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin-top:1.5rem;">Hier darfst du ankommen. Ganz.</p>
+    <div style="margin-top: 2.5rem;" class="fade-in">
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-primary">Jetzt einen Termin wählen →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMPFANG BILD ============ -->
+<div class="empfang-wrap fade-in">
+  <img src="images/empfang.jpeg" alt="Moon & Sun Head Spa – Empfang">
+</div>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- ============ THREE PILLARS ============ -->
+<section class="pillars">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 4rem;">
+      <span class="eyebrow fade-in">Was uns trägt</span>
+      <h2 class="fade-in fade-in-delay-1">Jedes Mal.</h2>
+    </div>
+    <div class="grid-3">
+      <div class="pillar-card fade-in">
+        <div class="pillar-icon">◎</div>
+        <h3>Nachhaltige Tiefenentspannung</h3>
+        <p>Nicht die Art, die nach einer Stunde wieder verpufft. Unsere Rituale beruhigen das Nervensystem in seiner Tiefe, mit Wirkung, die spürbar bleibt.</p>
+      </div>
+      <div class="pillar-card fade-in fade-in-delay-1">
+        <div class="pillar-icon">◌</div>
+        <h3>Bewusste Stille, Silent Treatment</h3>
+        <p>Alle Behandlungen finden als Silent Treatment statt. Keine Hintergrundberieselung, kein Smalltalk. Nur du, die Berührung und die Ruhe.</p>
+      </div>
+      <div class="pillar-card fade-in fade-in-delay-2">
+        <div class="pillar-icon">◇</div>
+        <h3>Ein Ort nur für dich</h3>
+        <p>Kein Betrieb, keine Hektik. Du kommst an, du wirst empfangen, du darfst loslassen. So einfach. So selten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- ============ SIGNATURE RITUAL ============ -->
+<section class="signature">
+  <div class="container">
+    <span class="eyebrow fade-in">Das Herzstück von Moon & Sun Head Spa</span>
+    <h2 class="fade-in fade-in-delay-1">Das Astral Aura Ritual Head Spa®<br>erschaffen, um tiefer zu wirken.</h2>
+    <p class="fade-in fade-in-delay-2">Das Astral Aura Ritual Head Spa® ist eine von Aysun Arslan eigens entwickelte und markengeschützte Behandlung. Sie verbindet jahrelange Expertise aus Reiki, ASMR, Holistic Pulsing, fachkosmetischer Kopfhautpflege mit Natulique-Produkten und der einzigartigen Regenbogenbrause zu einem Erlebnis, das du so noch nicht gekannt hast.</p>
+    <p class="fade-in">Du gleitest in einen Zustand zwischen Wachsein und Schlaf. Dein Körper löst Spannungen, die du längst vergessen hast zu tragen. Dein Nervensystem findet zurück zu sich selbst.</p>
+    <p class="fade-in" style="font-style:italic; font-family:'Cormorant Garamond',serif; font-size:1.15rem; color:#ffffff;">Das ist kein Verwöhnprogramm. Das ist Regeneration auf Tiefenebene.</p>
+    <div style="margin-top: 3rem;" class="fade-in">
+      <a href="pages/angebote-astral-aura.html" class="btn-primary">Das Astral Aura Ritual entdecken →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEHANDLUNGSRAUM BILD ============ -->
+<div class="behandlungsraum-wrap fade-in">
+  <img src="images/behandlungsraum.jpeg" alt="Moon & Sun Head Spa – Behandlungsraum">
+  <img src="images/behandlungsraum2.jpeg" alt="Moon & Sun Head Spa – Behandlungsraum 2">
+</div>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- ============ OFFERS GRID ============ -->
+<section class="offers-section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 4rem;">
+      <span class="eyebrow fade-in">Unsere Rituale im Überblick</span>
+      <h2 class="fade-in fade-in-delay-1">Für Kopfhaut, Gesicht, Schultern & Seele.</h2>
+    </div>
+    <div class="grid-2">
+      <div class="offer-card fade-in">
+        <h3>Head Spa Rituale <img src="images/astral-aura-icon.png" alt="Astral Aura Ritual Head Spa® – markengeschützt" style="height:1.1em; width:auto; vertical-align:middle; display:inline; margin-left:0.3rem; position:relative; top:-0.1em;"></h3>
+        <p>Das Astral Aura Ritual Head Spa®, die Signature-Behandlung. ASMR, Reiki, Regenbogenbrause und Kopfhautpflege in einem.</p>
+        <a href="pages/angebote-astral-aura.html" class="offer-link">Mehr erfahren →</a>
+      </div>
+      <div class="offer-card fade-in fade-in-delay-1">
+        <h3>Astral Aura Together</h3>
+        <p>Gemeinsam loslassen. Für Paare, Freundinnen, Mütter & Töchter. Das Head Spa-Erlebnis zu zweit.</p>
+        <a href="pages/angebote-together.html" class="offer-link">Mehr erfahren →</a>
+      </div>
+      <div class="offer-card fade-in">
+        <h3>Nacken & Schulter Rituale</h3>
+        <p>Dort, wo du am meisten trägst. Gezielte ASMR-Entspannung, Hot Stone Wärme und achtsame Energiearbeit.</p>
+        <a href="pages/angebote-nacken.html" class="offer-link">Mehr erfahren →</a>
+      </div>
+      <div class="offer-card fade-in fade-in-delay-1">
+        <h3>ASMR Kobido Lifting & Kosmetik</h3>
+        <p>Japanisches Lifting trifft auf stille ASMR-Behandlung. Natürlicher Glow & tiefe Entspannung mit hochwertigen Dalton-Produkten.</p>
+        <a href="pages/angebote-kobido.html" class="offer-link">Mehr erfahren →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- ============ REVIEWS PREVIEW ============ -->
+<section class="reviews-preview">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 4rem;">
+      <span class="eyebrow fade-in">Was unsere Gäste sagen</span>
+      <h2 class="fade-in fade-in-delay-1">Echte Worte. Echte Wirkung.</h2>
+    </div>
+    <div class="grid-3">
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Ruhe. Entspannung. Erholung. Genau so stellt man sich Abschalten vor."</p>
+        <span class="review-name">— Martina</span>
+      </div>
+      <div class="review-card fade-in fade-in-delay-1">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Man fühlt sich in den stimmungsvollen Räumen sofort wohl. Ich war danach völlig anders. Sofort wieder."</p>
+        <span class="review-name">— Daniela</span>
+      </div>
+      <div class="review-card fade-in fade-in-delay-2">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Wenn wer Entspannung sucht, ist er hier bestens aufgehoben. Habe mich danach total entspannt gefühlt."</p>
+        <span class="review-name">— Susanne</span>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 3rem;" class="fade-in">
+      <a href="pages/bewertungen.html" class="btn-primary">Alle Bewertungen lesen →</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- ============ VISIT ============ -->
+<section class="visit-section">
+  <div class="visit-inner">
+    <span class="eyebrow fade-in">So funktioniert dein Besuch</span>
+    <h2 class="fade-in fade-in-delay-1">Ankommen darf hier wirklich Ankommen bedeuten.</h2>
+    <p class="fade-in fade-in-delay-2">Vor jeder Behandlung nehmen wir uns Zeit für ein kurzes, persönliches Gespräch. Wir möchten wissen, wie es dir heute geht, nicht nur was du gebucht hast.</p>
+    <p class="fade-in">Plane rund zwei Stunden ein. Für die Behandlung. Für das Ankommen davor. Für die Nachruhe danach mit einer Tasse Tee oder Kaffee, in Stille, ohne Eile.</p>
+    <p class="fade-in">Zwischen den Terminen entstehen bewusste Ruhepausen, damit du nie ins Gewusel kommst. Du wirst empfangen. Du wirst begleitet. Du gehst anders, als du gekommen bist.</p>
+    <p class="fade-in" style="color: var(--gold); font-size:0.82rem; letter-spacing:0.1em; margin-top:1.5rem;">Kostenlose Parkplätze direkt vor dem Haus.</p>
+    <div style="margin-top: 2.5rem;" class="fade-in">
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-primary">Termin buchen →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STUDIO PHOTO ============ -->
+<div class="studio-photo-wrap fade-in">
+  <img src="images/wartebereich.jpeg" alt="Moon & Sun Head Spa – Wartebereich">
+</div>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="container">
+    <span class="eyebrow fade-in">Für dich</span>
+    <h2 class="fade-in fade-in-delay-1">Du weißt bereits, dass du dir das schon lange schuldest.</h2>
+    <p class="fade-in fade-in-delay-2">Schenk dir jetzt den Moment, den dein Nervensystem sich so lange gewünscht hat.</p>
+    <div class="fade-in fade-in-delay-3">
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-beige" style="font-size:0.75rem; padding: 1.1rem 3rem;">Jetzt buchen — für mich →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo-white.png" alt="Moon & Sun Head Spa Logo" class="footer-logo">
+        <p>Unterwagramerstraße 47/2<br>3100 St. Pölten<br>Österreich</p>
+        <p style="margin-top:0.8rem;">Kostenlose Parkplätze direkt vor dem Haus.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/moon_sunheadspa/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/Moonsunheadspa" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="pages/angebote-astral-aura.html">Astral Aura Ritual</a>
+        <a href="pages/angebote-together.html">Astral Aura Together</a>
+        <a href="pages/angebote-nacken.html">Nacken & Schulter Rituale</a>
+        <a href="pages/angebote-kobido.html">ASMR Kobido Lifting</a>
+        <a href="pages/ueber-uns.html">Über uns</a>
+        <a href="pages/bewertungen.html">Bewertungen</a>
+        <a href="pages/preisliste.html">Preisliste</a>
+        <a href="pages/gutscheine.html">Gutscheine</a>
+        <a href="pages/schulungen.html">Schulungen</a>
+        <a href="pages/rahmenbedingungen.html">Rahmenbedingungen</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt & Info</h4>
+        <p>+43 690 10085496</p>
+        <a href="mailto:moon_sunheadspa@hotmail.com">moon_sunheadspa@hotmail.com</a>
+        <p style="margin-top:1rem; font-size:0.75rem; color:#ffffff;">Zahlung: Barzahlung</p>
+        <p style="font-size:0.75rem; color:#ffffff;">Gutscheine, auch digital per E-Mail</p>
+        <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-footer" style="display:inline-flex; align-items:center; justify-content:center; text-align:center;">Termin buchen</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Moon & Sun Head Spa · Aysun Arslan</p>
+      <div class="footer-legal">
+        <a href="pages/impressum.html">Impressum</a>
+        <a href="pages/agb.html">AGB</a>
+        <a href="pages/datenschutz.html">Datenschutz & Widerruf</a>
+      </div>
+    </div>
+    <p class="footer-disclaimer">Alle Behandlungen dienen der Entspannung, Prävention und dem allgemeinen Wohlbefinden. Sie ersetzen keine medizinische oder therapeutische Behandlung. Das Astral Aura Ritual Head Spa® ist eine markengeschützte Behandlungsmethode.</p>
+  </div>
+</footer>
+
+<!-- Cookie Banner -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">
+    <p>Wir verwenden Cookies, um dir die bestmögliche Erfahrung auf unserer Website zu bieten. Mit deiner Zustimmung akzeptierst du die Verwendung von Cookies gemäß unserer <a href="pages/datenschutz.html">Datenschutzerklärung</a>.</p>
+  </div>
+  <div class="cookie-actions">
+    <button class="cookie-accept" id="cookieAccept">Akzeptieren</button>
+    <button class="cookie-decline" id="cookieDecline">Ablehnen</button>
+  </div>
+</div>
+
+<!-- Mobile sticky CTA -->
+<a href="https://calendly.com/moon_sunheadspa" target="_blank" class="mobile-sticky-cta">Termin buchen</a>
+
+<script src="js/main.js"></script>
+<script>
+  // Home-specific: hamburger for home nav
+  document.getElementById('homeHamburger').addEventListener('click', function(){
+    document.getElementById('mobileNavOverlay').classList.add('open');
+  });
+</script>
+</body>
+</html>

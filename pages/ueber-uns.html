@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns – Aysun Arslan & Team | Moon & Sun Head Spa St. Pölten</title>
+  <meta name="description" content="Moon & Sun Head Spa in St. Pölten – geführt von Aysun Arslan, Reiki-Energetikerin, ASMR-Expertin & Kosmetikerin. Hochwertige Rituale mit Natulique & Dalton Produkten.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .team-photo-wrap {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .team-photo-wrap img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center 45%;
+      display: block;
+    }
+    .team-photo-border {
+      border: 1px solid rgba(201,169,110,0.3);
+      padding: 6px;
+      display: inline-block;
+      width: 100%;
+    }
+    .quali-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+    .quali-list li {
+      padding: 0.55rem 0 0.55rem 1.8rem;
+      position: relative;
+      color: #ffffff;
+      font-size: 0.9rem;
+      border-bottom: 1px solid rgba(201,169,110,0.08);
+    }
+    .quali-list li::before { content: '✦'; color: var(--gold); position: absolute; left: 0; font-size: 0.6rem; top: 0.75rem; }
+    .product-card {
+      border: 1px solid rgba(201,169,110,0.18);
+      padding: 2.5rem;
+      transition: border-color 0.4s;
+    }
+    .product-card:hover { border-color: var(--gold); }
+    .product-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--gold-light); }
+    .product-card p { color: #ffffff; font-size: 0.9rem; }
+    .hinweis-box {
+      border: 1px solid rgba(201,169,110,0.2);
+      padding: 2rem 2.5rem;
+      margin-top: 1rem;
+    }
+    .hinweis-box ul { list-style: none; padding: 0; }
+    .hinweis-box ul li {
+      padding: 0.5rem 0 0.5rem 1.8rem;
+      position: relative;
+      color: #ffffff;
+      font-size: 0.85rem;
+      border-bottom: 1px solid rgba(201,169,110,0.06);
+    }
+    .hinweis-box ul li::before { content: '·'; color: var(--gold); position: absolute; left: 0; }
+    /* Cert slider */
+    .cert-slider-wrap { position: relative; overflow: hidden; }
+    .cert-track {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .cert-item {
+      flex: 0 0 33.333%;
+      padding: 0 0.75rem;
+      box-sizing: border-box;
+    }
+    .cert-item img {
+      width: 100%;
+      height: 260px;
+      object-fit: contain;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,169,110,0.12);
+      padding: 1rem;
+    }
+    .cert-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .cert-btn {
+      width: 44px; height: 44px;
+      border: 1px solid rgba(201,169,110,0.3);
+      background: transparent;
+      color: var(--gold);
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: border-color 0.3s, background 0.3s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .cert-btn:hover { border-color: var(--gold); background: rgba(201,169,110,0.08); }
+    @media (max-width: 768px) {
+      .cert-item { flex: 0 0 100%; }
+      .team-section-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</head>
+<body class="subpage-body">
+<header class="subpage-header">
+  <a href="../index.html"><img src="../images/logo-white.png" alt="Moon & Sun Head Spa" class="header-logo"></a>
+  <nav class="subpage-nav">
+    <a href="../index.html">Home</a>
+    <div class="nav-dropdown">
+      <a href="#">Angebote</a>
+      <div class="dropdown-menu">
+        <a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a>
+        <a href="angebote-together.html">Astral Aura Together</a>
+        <a href="angebote-nacken.html">ASMR Nacken- & Schulter-Rituale</a>
+        <a href="angebote-kobido.html">ASMR Kobido Lifting & Kosmetik</a>
+      </div>
+    </div>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="bewertungen.html">Bewertungen</a>
+    <a href="preisliste.html">Preisliste</a>
+    <a href="gutscheine.html">Gutscheine</a>
+    <a href="schulungen.html">Schulungen</a>
+    <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
+    <span class="phone-nav">+43 690 10085496</span>
+    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-nav">Termin buchen</a>
+  </nav>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <button class="close-btn" id="mobileNavClose">✕</button>
+  <a href="../index.html">Home</a>
+  <a href="angebote-astral-aura.html">Astral Aura Ritual</a>
+  <a href="angebote-together.html">Astral Aura Together</a>
+  <a href="angebote-nacken.html">Nacken & Schulter</a>
+  <a href="angebote-kobido.html">Kobido Lifting</a>
+  <a href="ueber-uns.html">Über uns</a>
+  <a href="bewertungen.html">Bewertungen</a>
+  <a href="preisliste.html">Preisliste</a>
+  <a href="gutscheine.html">Gutscheine</a>
+  <a href="schulungen.html">Schulungen</a>
+  <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
+  <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="mobile-book-btn btn-beige">Termin buchen</a>
+</div>
+
+<div class="subpage-banner">
+  <span class="eyebrow">Das Team</span>
+  <h1>Hinter Moon & Sun stehen Menschen,<br>die selbst wissen, wie wichtig Ruhe ist.</h1>
+</div>
+
+<!-- AYSUN -->
+<section class="section-dark" style="padding: 6rem 0;">
+  <div class="container">
+    <div class="grid-2 team-section-grid" style="align-items: center; gap: 5rem;">
+      <div class="fade-in">
+        <div class="team-photo-border">
+          <div class="team-photo-wrap">
+            <img src="../images/team1-neu.jpeg" alt="Aysun Arslan – Gründerin Moon & Sun Head Spa">
+          </div>
+        </div>
+      </div>
+      <div class="fade-in fade-in-delay-1">
+        <span class="eyebrow">Gründerin & Visionärin</span>
+        <h2>Aysun Arslan<br>Die Frau hinter dem Ritual.</h2>
+        <p style="color:#ffffff; margin-top:1.5rem;">Moon & Sun Head Spa ist kein Zufall. Es ist das Ergebnis von Jahren intensiver Ausbildung, gelebter Leidenschaft und einer tiefen Überzeugung: dass echter Rückzug keine Seltenheit sein sollte, sondern ein regelmäßiges Recht, mitten im Alltag, erreichbar, spürbar.</p>
+        <ul class="quali-list" style="margin-top:1.8rem;">
+          <li>Reiki-Energetikerin</li>
+          <li>Akkreditierte ASMR-Praktikerin</li>
+          <li>Spezialistin für Kobido und ganzheitliche Haut- & Körperpflege</li>
+          <li>Trainerin für Face Yoga & natürliches Lifting</li>
+          <li>Zertifizierte Praktikerin für Indische Kopfmassage, Gua Sha und Aromatherapie</li>
+          <li>Aktuell in der Fachausbildung zur Kosmetikerin</li>
+        </ul>
+        <p style="color:#ffffff; font-style:italic; font-family:'Cormorant Garamond',serif; font-size:1.05rem; margin-top:1.5rem;">Aysuns Arbeit trägt immer dieselbe Haltung: Du bist hier nicht Kundin. Du bist Gast. Und dieser Raum gehört dir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- TEAM -->
+<section class="section-dark" style="padding: 5rem 0;">
+  <div class="container">
+    <div class="grid-2 team-section-grid" style="align-items: center; gap: 5rem;">
+      <div class="fade-in fade-in-delay-1">
+        <span class="eyebrow">An ihrer Seite</span>
+        <h2>Zwei Frauen. Eine Haltung.</h2>
+        <p style="color:#ffffff; margin-top:1.5rem;">Moon & Sun Head Spa wird von Aysun geführt und von ihrer lieben Kollegin Ajla unterstützt, zwei Frauen, die beide aus Überzeugung in diesem Bereich arbeiten. Nicht weil es ein Job ist, sondern weil sie glauben, dass achtsame Berührung und bewusste Ruhe etwas in Menschen verändern kann.</p>
+        <p style="color:#ffffff; margin-top:1rem;">Du wirst bei beiden dasselbe spüren: Präsenz. Wärme. Den Wunsch, dass du wirklich gut hier weitergehst.</p>
+      </div>
+      <div class="fade-in">
+        <div class="team-photo-border">
+          <div class="team-photo-wrap">
+            <img src="../images/team2-neu.jpeg" alt="Aysun & Ajla – Moon & Sun Head Spa Team">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- CERT SLIDER -->
+<section class="section-dark" style="padding: 5rem 0;">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 3rem;">
+      <span class="eyebrow fade-in">Ausbildung & Expertise</span>
+      <h2 class="fade-in fade-in-delay-1">Zertifizierte Qualität.</h2>
+    </div>
+    <div class="cert-slider-wrap fade-in">
+      <div class="cert-track" id="certTrack">
+        <div class="cert-item"><img src="../images/cert1.png" alt="Fachpraktikerin Massage & Wellness"></div>
+        <div class="cert-item"><img src="../images/cert2.png" alt="Gua Sha Zertifikat"></div>
+        <div class="cert-item"><img src="../images/cert3.png" alt="Diplomkurs Aromatherapie"></div>
+        <div class="cert-item"><img src="../images/cert4.png" alt="Accredited Indian Head Massage ASMR"></div>
+        <div class="cert-item"><img src="../images/cert5.png" alt="Reiki 1. Grad Zertifikat"></div>
+        <div class="cert-item"><img src="../images/cert6.png" alt="Specialist Practitioner Massage Wellness Prevention"></div>
+        <div class="cert-item"><img src="../images/cert7.png" alt="Yoga & Gesichtsfitness Zertifikat"></div>
+        <div class="cert-item"><img src="../images/cert8.png" alt="Zertifikat Moon & Sun Head Spa"></div>
+      </div>
+    </div>
+    <div class="cert-nav">
+      <button class="cert-btn" id="certPrev">←</button>
+      <button class="cert-btn" id="certNext">→</button>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- PRODUCTS -->
+<section class="section-dark" style="padding: 5rem 0;">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 3.5rem;">
+      <span class="eyebrow fade-in">Qualität, die du spürst</span>
+      <h2 class="fade-in fade-in-delay-1">Wir wählen bewusst. Auch bei den Produkten.</h2>
+    </div>
+    <div class="grid-2" style="gap: 2rem;">
+      <div class="product-card fade-in">
+        <h3>Natulique</h3>
+        <p>Für die Haare und Kopfhautpflege setzen wir auf Natulique, hochwertige Profipflege, die auf natürliche Inhaltsstoffe setzt. Damit die Behandlung nicht nur in der Tiefe des Nervensystems wirkt, sondern auch sichtbar auf Haut und Haar.</p>
+      </div>
+      <div class="product-card fade-in fade-in-delay-1">
+        <h3>Dalton</h3>
+        <p>Für die Gesichts- und Körperpflege vertrauen wir auf Dalton, eine professionelle Kosmetikserie, bekannt für ihre hautpflegende Wirksamkeit und hochwertige Formulierungen. Was in unsere Behandlungen einfließt, soll dir wirklich guttun.</p>
+      </div>
+    </div>
+    <p class="fade-in" style="color:#ffffff; font-size:0.82rem; margin-top:2rem; text-align:center; font-style:italic;">Solltest du nach der Behandlung eines oder mehrere Produkte für zu Hause haben wollen, gib uns gerne Bescheid.</p>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- WHY -->
+<section class="section-dark" style="padding: 5rem 0;">
+  <div class="container-narrow text-center">
+    <span class="eyebrow fade-in">Die Idee dahinter</span>
+    <h2 class="fade-in fade-in-delay-1">Wir leben in einer Zeit des ständigen Zuviel.</h2>
+    <p class="fade-in fade-in-delay-2" style="color:#ffffff; margin-top:1.5rem;">Zu viele Reize. Zu viele Gedanken. Zu viele Verpflichtungen. Unser Körper befindet sich dauerhaft im Funktionsmodus, Regeneration bleibt oft auf der Strecke.</p>
+    <p class="fade-in" style="color:var(--gold-light); font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-style:italic; margin-top:1.5rem;">Ruhe ist keine Belohnung. Sie ist eine Notwendigkeit.</p>
+    <p class="fade-in" style="color:#ffffff; margin-top:1.5rem;">Genau deshalb gibt es Moon & Sun Head Spa. Einen Ort, an dem du dir mitten in der Woche eine, zwei Stunden nur für dich nimmst. Eine Mini-Wellness-Auszeit, die tief wirkt. Einfach da. Einfach jetzt.</p>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- HINWEISE -->
+<section class="section-dark" style="padding: 4rem 0;">
+  <div class="container-narrow">
+    <span class="eyebrow fade-in text-center" style="display:block;">Wichtige Hinweise</span>
+    <div class="hinweis-box fade-in" style="margin-top:2rem;">
+      <ul>
+        <li>Das Astral Aura Ritual Head Spa® ist eine markengeschützte Behandlungsmethode.</li>
+        <li>Alle Anwendungen dienen der Entspannung, Prävention und dem allgemeinen Wohlbefinden, sie ersetzen keine medizinische oder therapeutische Behandlung.</li>
+        <li>Unser Studio ist auf Frauen-Wellness ausgerichtet. Einzelbehandlungen sind ausschließlich für Frauen. Herren sind herzlich willkommen im Rahmen von Paar- und Doppelbehandlungen.</li>
+        <li>Bei besonderen gesundheitlichen Situationen bitten wir um kurze Rücksprache vor dem Termin.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider fade-in"><span>✦</span></div>
+
+<!-- ADRESSE + CTA -->
+<section style="background:var(--black); padding:5rem 2rem; text-align:center;">
+  <span class="eyebrow fade-in">Besuche uns</span>
+  <h2 class="fade-in fade-in-delay-1">Wir freuen uns darauf, dich zu empfangen.</h2>
+  <p class="fade-in" style="color:#ffffff; margin-top:1rem; font-size:0.85rem;">Moon & Sun Head Spa · Unterwagramerstraße 47/2 · 3100 St. Pölten<br>Kostenlose Parkplätze direkt vor dem Haus.</p>
+  <div style="margin-top:2.5rem;" class="fade-in fade-in-delay-2">
+    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-beige" style="font-size:.75rem; padding:1.1rem 3rem;">Jetzt Termin buchen →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="../images/logo-white.png" alt="Moon & Sun Head Spa Logo" class="footer-logo">
+        <p>Unterwagramerstraße 47/2<br>3100 St. Pölten · Österreich</p>
+        <p style="margin-top:0.8rem;">Kostenlose Parkplätze direkt vor dem Haus.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/moon_sunheadspa/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.facebook.com/Moonsunheadspa" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="../index.html">Home</a>
+        <a href="angebote-astral-aura.html">Astral Aura Ritual</a>
+        <a href="angebote-together.html">Astral Aura Together</a>
+        <a href="angebote-nacken.html">Nacken & Schulter</a>
+        <a href="angebote-kobido.html">Kobido Lifting</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="bewertungen.html">Bewertungen</a>
+        <a href="preisliste.html">Preisliste</a>
+        <a href="gutscheine.html">Gutscheine</a>
+        <a href="schulungen.html">Schulungen</a>
+        <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt & Info</h4>
+        <p>+43 690 10085496</p>
+        <a href="mailto:moon_sunheadspa@hotmail.com">moon_sunheadspa@hotmail.com</a>
+        <p style="margin-top:1rem;font-size:.75rem;color:#ffffff;">Zahlung: Barzahlung</p>
+        <p style="font-size:.75rem;color:#ffffff;">Gutscheine, auch digital per E-Mail</p>
+        <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-footer" style="display:inline-flex; align-items:center; justify-content:center; text-align:center;">Termin buchen</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Moon & Sun Head Spa · Aysun Arslan</p>
+      <div class="footer-legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutz.html">Datenschutz & Widerruf</a>
+      </div>
+    </div>
+    <p class="footer-disclaimer">Alle Behandlungen dienen der Entspannung, Prävention und dem allgemeinen Wohlbefinden. Sie ersetzen keine medizinische oder therapeutische Behandlung. Das Astral Aura Ritual Head Spa® ist eine markengeschützte Behandlungsmethode.</p>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text"><p>Wir verwenden Cookies. <a href="datenschutz.html">Datenschutzerklärung</a></p></div>
+  <div class="cookie-actions">
+    <button class="cookie-accept" id="cookieAccept">Akzeptieren</button>
+    <button class="cookie-decline" id="cookieDecline">Ablehnen</button>
+  </div>
+</div>
+<a href="https://calendly.com/moon_sunheadspa" target="_blank" class="mobile-sticky-cta">Termin buchen</a>
+<script src="../js/main.js"></script>
+</body>
+</html>

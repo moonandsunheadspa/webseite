@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewertungen – Moon & Sun Head Spa St. Pölten</title>
+  <meta name="description" content="Über 70 echte Kundenbewertungen zu Head Spa, ASMR & Kobido Lifting bei Moon & Sun Head Spa in St. Pölten. Bewertung: 5.0 / 5.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .trust-bar {
+      background: #0d0d0d;
+      border-bottom: 1px solid rgba(201,169,110,0.15);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .trust-bar .score {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .trust-bar .stars-big { color: #f5c518; font-size: 1.6rem; letter-spacing: 0.15em; margin: 0.5rem 0; }
+    .trust-bar .count { font-size: 0.825rem; color: #ffffff; letter-spacing: 0.18em; text-transform: uppercase; }
+    .trust-bar .label { font-size: 0.792rem; color: #ffffff; margin-top: 0.5rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      padding: 4rem 2rem 6rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .r-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(201,169,110,0.12);
+      padding: 2.2rem;
+      transition: border-color 0.4s, background 0.4s;
+    }
+    .r-card:hover { border-color: rgba(201,169,110,0.35); background: rgba(201,169,110,0.03); }
+    .r-stars { color: #f5c518; font-size: 0.9rem; letter-spacing: 0.08em; margin-bottom: 0.8rem; }
+    .r-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.06em;
+    }
+    .r-text {
+      font-size: 0.88rem;
+      color: #ffffff;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    .r-treatment {
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+
+    @media (max-width: 768px) {
+      .reviews-grid { grid-template-columns: 1fr; padding: 2rem 1.2rem 4rem; }
+    }
+  </style>
+</head>
+<body class="subpage-body">
+<header class="subpage-header">
+  <a href="../index.html"><img src="../images/logo-white.png" alt="Moon & Sun Head Spa" class="header-logo"></a>
+  <nav class="subpage-nav">
+    <a href="../index.html">Home</a>
+    <div class="nav-dropdown">
+      <a href="#">Angebote</a>
+      <div class="dropdown-menu">
+        <a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a>
+        <a href="angebote-together.html">Astral Aura Together</a>
+        <a href="angebote-nacken.html">ASMR Nacken- & Schulter-Rituale</a>
+        <a href="angebote-kobido.html">ASMR Kobido Lifting & Kosmetik</a>
+      </div>
+    </div>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="bewertungen.html">Bewertungen</a>
+    <a href="preisliste.html">Preisliste</a>
+    <a href="gutscheine.html">Gutscheine</a>
+    <a href="schulungen.html">Schulungen</a>
+    <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
+    <span class="phone-nav">+43 690 10085496</span>
+    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-nav">Termin buchen</a>
+  </nav>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <button class="close-btn" id="mobileNavClose">✕</button>
+  <a href="../index.html">Home</a>
+  <a href="angebote-astral-aura.html">Astral Aura Ritual</a>
+  <a href="angebote-together.html">Astral Aura Together</a>
+  <a href="angebote-nacken.html">Nacken & Schulter</a>
+  <a href="angebote-kobido.html">Kobido Lifting</a>
+  <a href="ueber-uns.html">Über uns</a>
+  <a href="bewertungen.html">Bewertungen</a>
+  <a href="preisliste.html">Preisliste</a>
+  <a href="gutscheine.html">Gutscheine</a>
+  <a href="schulungen.html">Schulungen</a>
+  <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
+  <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="mobile-book-btn btn-beige">Termin buchen</a>
+</div>
+
+<div class="subpage-banner">
+  <span class="eyebrow">Erfahrungen unserer Gästinnen</span>
+  <h1>Was unsere Gäste sagen.</h1>
+  <p>Echte Worte. Echte Wirkung. Echte Menschen, die sich etwas Besonderes gegönnt haben.</p>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <a href="https://www.google.com/search?newwindow=1&sca_esv=525e608177515078&rlz=1C1VDKB_deAT1100AT1100&sxsrf=ANbL-n5ISkxvUSL3WzgaM622vLfiDiogyQ:1779443523035&q=moon+%26+sun+head+spa&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOew2WnALeMXQHGhvKG3_fDE7JaD40Zwc0R7ZVdfSJbOY6JiTyZv8C0lptq8OFnPcddgI99M%3D&uds=ALYpb_nUOii3xq83QISjOGo-FImByzoc3_gQ5LaAHXL8FauFBUbus_5qfGyvnJHK77XQ3gMi2VFTqm7hYJxd_U0R4gIrDrNfO7cV5VxTcQFS-SOgI4nDu7c&sa=X&ved=2ahUKEwiMjdrYz8yUAxVLgf0HHerLMKkQ3PALegQIHBAE&biw=1536&bih=738&dpr=1.25" target="_blank" style="background:var(--beige); color:var(--black); border:none; padding:0.55rem 1.4rem; font-family:'Inter',sans-serif; font-size:0.715rem; letter-spacing:0.18em; text-transform:uppercase; cursor:pointer; transition:background 0.3s; white-space:nowrap; text-decoration:none; display:inline-block;" onmouseover="this.style.background='var(--gold)'" onmouseout="this.style.background='var(--beige)'">Teile deine Erfahrungen</a>
+  <div class="score">5.0</div>
+  <div class="stars-big">★★★★★</div>
+  <div class="count">Über 70 Bewertungen</div>
+  <div class="label">Erfahrungen unserer KundInnen</div>
+</div>
+
+<!-- ALL REVIEWS -->
+<div class="reviews-grid">
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Martina</div>
+    <p class="r-text">„Die Kontaktaufnahme war unkompliziert und sehr nett. Das Willkommen zum Termin war herzlich, und man fühlt sich in den stimmungsvollen Räumen sofort wohl. Bei einem Gespräch vor der Behandlung wurde die Vorgehensweise erklärt. Auf der bequemen Liege, in eine weiche Decke gehüllt, genießt man — es wird gekämmt, massiert, gestrichen, geölt, gesalbt, begleitet von sanften ASMR Geräuschen. Top! Sofort wieder."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Daniela</div>
+    <p class="r-text">„Wenn wer Entspannung sucht ist er hier bestens aufgehoben. Die Behandlung ist ganz einfach großartig, habe mich danach total entspannt gefühlt."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Susanne</div>
+    <p class="r-text">„Ich habe mir eine Gesichtsmassage gegönnt und war sehr zufrieden!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Bettina</div>
+    <p class="r-text">„Ich habe mich rundherum wohl gefühlt. Ein kleiner Kurzurlaub, den ich öfter wiederholen möchte. Vielen lieben Dank dafür!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Manuela</div>
+    <p class="r-text">„Noch nie fühlte sich meine Kopfhaut so entspannt und gepflegt an. Kann es jeden nur empfehlen der sich beim Relaxen auch was Gutes tun will."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Julia</div>
+    <p class="r-text">„Ich bin wirklich beeindruckt! Die Atmosphäre, die Art von Aysun — alles dafür perfekt um sich entspannen zu können. Es war meine erste Head Spa, würde ich es aber jedem empfehlen!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Petra</div>
+    <p class="r-text">„Sehr entspannend, habe mich hier sehr wohlgefühlt und kann es jedem empfehlen."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Lisa</div>
+    <p class="r-text">„War eine sehr entspannte Stunde. Haben uns sehr wohl gefühlt."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Sanja</div>
+    <p class="r-text">„Es war eine tolle, neue Erfahrung. Absolut empfehlenswert. Hab mich gleich total wohl gefühlt. Super schönes Ambiente. Entspannung pur."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Katharina</div>
+    <p class="r-text">„Den Salon hat Aysun sehr liebevoll gestaltet und lädt zum Entspannen ein! Meine Haare waren danach so gut gepflegt und die Behandlung fand ich großartig! Ein Ort zum Abschalten!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Bettina</div>
+    <p class="r-text">„Ich war das erste Mal bei MoonSun Headspa mit meiner Mama, wir hatten eine Doppelbehandlung und es war sooo entspannend. Das Team ist sehr sympathisch und herzlich und wir kommen auf alle Fälle wieder."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Diana</div>
+    <p class="r-text">„Ich kann es jedem nur empfehlen! Entspannung pur!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Christiane</div>
+    <p class="r-text">„Das Studio ist wunderschön eingerichtet, man fühlt sich ab Sekunde 1 wohl und gut aufgehoben. Die Behandlung war Entspannung pur, ich komme sicher wieder!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Tanja</div>
+    <p class="r-text">„Wir hatten eine Behandlung zu zweit, es war sehr angenehm."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Cathrin</div>
+    <p class="r-text">„Ich hatte die Behandlung Deep Relax und ich liebe sie!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Barbara</div>
+    <p class="r-text">„Es war sehr angenehm, man kann es nur weiter empfehlen."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Barbara</div>
+    <p class="r-text">„Es hat mir sehr gut getan. Sehr entspannend."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Nika</div>
+    <p class="r-text">„Großartige entspannende Erfahrung, man kann wirklich abschalten!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Sophie</div>
+    <p class="r-text">„Es war wirklich ein super Erlebnis. Entspannung pur. Ich komme sicher wieder. Vielen Dank!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Martina</div>
+    <p class="r-text">„Tolles Erlebnis!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Denise</div>
+    <p class="r-text">„Nice, friendly, honest and professional. Recommended!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Jacqueline</div>
+    <p class="r-text">„Mein Freund und ich haben die Behandlung sehr genossen und kommen bei Gelegenheit gerne wieder. Vielen Dank!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Helene</div>
+    <p class="r-text">„Es war extrem entspannend. Jederzeit wieder!!!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Conny</div>
+    <p class="r-text">„Ich bin super entspannt von Aysun nach Hause gegangen! Vielen vielen Dank! Ich kanns nur jedem empfehlen, der sich eine kurze wunderbare Auszeit vom Alltag gönnen möchte."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Liane</div>
+    <p class="r-text">„Super angenehm, die Behandlung war super entspannend. Kann es jeden nur empfehlen."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Sabrina</div>
+    <p class="r-text">„Ich war das 2. Mal da, und es war wieder super. Meine Mama war aus Deutschland zu Besuch und ich habe ihr vorher eine Behandlung geschenkt. Sie war im 7. Himmel."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Diana Sliwa</div>
+    <p class="r-text">„Großartig."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Simone</div>
+    <p class="r-text">„Wird ein monatliches Ritual! War sehr entspannt und toll!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Valerie</div>
+    <p class="r-text">„Immer wieder eine super tolle entspannende Erfahrung! Immer wieder gerne."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Tanja</div>
+    <p class="r-text">„Durch einen glücklichen Zufall bin ich auf diesen Salon gestoßen. Die Partner-Kopfmassage war tiefenentspannend und obwohl ich sehr empfindliche Haut habe, habe ich alle verwendeten Produkte gut vertragen. Ich kann den Salon weiterempfehlen!"</p>
+    <div class="r-treatment">Entspannungsmassage</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Daniela</div>
+    <p class="r-text">„Einfach ein Traum! Super entspannende Behandlungen und sehr sehr freundlich. Man fühlt sich von Beginn bis Ende gut aufgehoben und einfach wohl."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Tanja</div>
+    <p class="r-text">„Super."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Cornelia</div>
+    <p class="r-text">„Einfach unbeschreiblich toll! Kommen auf jeden Fall wieder! Herzensempfehlung!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Denise</div>
+    <p class="r-text">„Unglaublich tolle Erfahrung! Sehr nette Person, man fühlt sich direkt wohl und ist danach sehr entspannt. Perfekt für jeden, der eine kurze Auszeit vom Alltag braucht."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Lisa</div>
+    <p class="r-text">„Man kann es nur weiter empfehlen."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Avdic</div>
+    <p class="r-text">„Super."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Bettina</div>
+    <p class="r-text">„Ich bin ein Mensch der schwer abschalten kann, aber ich bin so begeistert von dieser herrlichen Behandlung und währenddessen bin ich dann doch komplett entspannt. Alle Sinne werden berührt und beruhigt. Aysun, danke — du hast nicht nur meine Haut berührt, sondern mit deiner fürsorglichen Art auch meine Seele. Nach diesem Treatment ist nicht nur meine Kopfhaut sauber, sondern auch meine Gedanken gereinigt."</p>
+    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Manuela</div>
+    <p class="r-text">„Ich war mit einer Freundin dort, nur zum Empfehlen!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Verena</div>
+    <p class="r-text">„Super tolle und entspannende Behandlung!"</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Lea</div>
+    <p class="r-text">„Schöne, entspannte Auszeit vom Alltag, sehr zu empfehlen."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Janine</div>
+    <p class="r-text">„Es war vom Empfang bis zum Schluss alles super! Die Behandlung war so toll, hab mich super entspannen können. Die Atmosphäre — traumhaft. Und es waren beide so so lieb! Absolut empfehlenswert."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Theresa</div>
+    <p class="r-text">„Ich habe mich in den Händen von Aysun sehr wohl gefühlt."</p>
+    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Cornelia</div>
+    <p class="r-text">„Es war eine sehr angenehme Behandlung. Habe es auch weiter empfohlen, weil es wirklich mal was anderes ist."</p>
+    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Diana</div>
+    <p class="r-text">„Super Atmosphäre! Alles sauber und gepflegt! Sehr netter Empfang! Alles top — nur zum weiterempfehlen!"</p>
+    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Birgit Trimmel</div>
+    <p class="r-text">„Ich war letzte Woche bei Aysun und ich hab mich sooo unglaublich wohl gefühlt bei ihr. Bei der Behandlung fühlte ich mich, als wär ich in einer anderen Welt abgetaucht — unglaublich wie sie das gemacht hat!! Ich kann Aysun auf alle Fälle von Herzen empfehlen!"</p>
+    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Stefanie</div>
+    <p class="r-text">„Einfach rundum zufrieden und vollständig entspannt."</p>
+    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Lisa</div>
+    <p class="r-text">„Bin total begeistert. Die Behandlung war entspannend, angenehm und Aysun Arslan war auch sehr freundlich und herzlich. Man fühlt sich dort richtig wohl. Es lohnt sich sehr."</p>
+    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
+  </div>
+
+  <div class="r-card fade-in fade-in-delay-1">
+    <div class="r-stars">★★★★★</div>
+    <div class="r-name">Barbara</div>
+    <p class="r-text">„Ich habe mich bei Aysun total wohl gefühlt. Die Atmosphäre war super entspannend. Kann ich nur weiterempfehlen."</p>
+    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
+  </div>
+
+</div>
+
+<!-- CTA -->
+<section style="background:#0d0d0d;padding:5rem 2rem;text-align:center;border-top:1px solid rgba(201,169,110,0.15);">
+  <div style="margin-bottom:2.5rem;" class="fade-in">
+    <a href="https://www.google.com/search?newwindow=1&sca_esv=525e608177515078&rlz=1C1VDKB_deAT1100AT1100&sxsrf=ANbL-n5ISkxvUSL3WzgaM622vLfiDiogyQ:1779443523035&q=moon+%26+sun+head+spa&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOew2WnALeMXQHGhvKG3_fDE7JaD40Zwc0R7ZVdfSJbOY6JiTyZv8C0lptq8OFnPcddgI99M%3D&uds=ALYpb_nUOii3xq83QISjOGo-FImByzoc3_gQ5LaAHXL8FauFBUbus_5qfGyvnJHK77XQ3gMi2VFTqm7hYJxd_U0R4gIrDrNfO7cV5VxTcQFS-SOgI4nDu7c&sa=X&ved=2ahUKEwiMjdrYz8yUAxVLgf0HHerLMKkQ3PALegQIHBAE&biw=1536&bih=738&dpr=1.25" target="_blank" style="background:var(--beige); color:var(--black); border:none; padding:0.55rem 1.4rem; font-family:'Inter',sans-serif; font-size:0.715rem; letter-spacing:0.18em; text-transform:uppercase; cursor:pointer; transition:background 0.3s; white-space:nowrap; text-decoration:none; display:inline-block;" onmouseover="this.style.background='var(--gold)'" onmouseout="this.style.background='var(--beige)'">Teile deine Erfahrungen</a>
+  </div>
+  <span class="eyebrow fade-in">Werde auch du Teil dieser Erfahrungen</span>
+  <h2 class="fade-in fade-in-delay-1">Deine Ruhe wartet.</h2>
+  <div style="margin-top:2.5rem;" class="fade-in fade-in-delay-2">
+    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-beige" style="font-size:.75rem;padding:1.1rem 3rem;">Jetzt Termin buchen →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="../images/logo-white.png" alt="Moon & Sun Head Spa Logo" class="footer-logo">
+        <p>Unterwagramerstraße 47/2<br>3100 St. Pölten · Österreich</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/moon_sunheadspa/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.facebook.com/Moonsunheadspa" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="../index.html">Home</a>
+        <a href="angebote-astral-aura.html">Astral Aura Ritual</a>
+        <a href="angebote-together.html">Astral Aura Together</a>
+        <a href="angebote-nacken.html">Nacken & Schulter</a>
+        <a href="angebote-kobido.html">Kobido Lifting</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="bewertungen.html">Bewertungen</a>
+        <a href="preisliste.html">Preisliste</a>
+        <a href="gutscheine.html">Gutscheine</a>
+        <a href="schulungen.html">Schulungen</a>
+        <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>+43 690 10085496</p>
+        <a href="mailto:moon_sunheadspa@hotmail.com">moon_sunheadspa@hotmail.com</a>
+        <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-footer" style="display:inline-flex; align-items:center; justify-content:center; text-align:center;">Termin buchen</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Moon & Sun Head Spa · Aysun Arslan</p>
+      <div class="footer-legal">
+        <a href="impressum.html">Impressum</a><a href="agb.html">AGB</a><a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    <p class="footer-disclaimer">Alle Behandlungen dienen der Entspannung, Prävention und dem allgemeinen Wohlbefinden. Sie ersetzen keine medizinische oder therapeutische Behandlung.</p>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text"><p>Wir verwenden Cookies. <a href="datenschutz.html">Datenschutzerklärung</a></p></div>
+  <div class="cookie-actions">
+    <button class="cookie-accept" id="cookieAccept">Akzeptieren</button>
+    <button class="cookie-decline" id="cookieDecline">Ablehnen</button>
+  </div>
+</div>
+<a href="https://calendly.com/moon_sunheadspa" target="_blank" class="mobile-sticky-cta">Termin buchen</a>
+<script src="../js/main.js"></script>
+</body>
+</html>

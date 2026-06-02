@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schulungen – Moon & Sun Head Spa St. Pölten</title>
+  <meta name="description" content="Schulungen und Masterclass bei Moon & Sun Head Spa. Astral Aura Ritual Head Spa 2-Tage Intensiv Masterclass 1:1.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .schulung-wrapper {
+      background: var(--black);
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+    }
+    .schulung-img-container {
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .schulung-img-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+    @media (max-width: 768px) {
+      .schulung-wrapper {
+        padding: 5rem 1rem 2rem 1rem;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <div class="schulung-wrapper">
+    <div class="schulung-img-container">
+      <img src="../images/schulung.jpeg" alt="Astral Aura Ritual Head Spa – 2-Tage Intensiv Masterclass 1:1">
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.getElementById('header-placeholder').innerHTML = renderSubpageHeader('../');
+    document.getElementById('footer-placeholder').innerHTML = renderFooter('../');
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
