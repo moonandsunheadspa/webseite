@@ -3,527 +3,967 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bewertungen – Moon & Sun Head Spa St. Pölten</title>
-  <meta name="description" content="Über 70 echte Kundenbewertungen zu Head Spa, ASMR & Kobido Lifting bei Moon & Sun Head Spa in St. Pölten. Bewertung: 5.0 / 5.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .trust-bar {
-      background: #0d0d0d;
-      border-bottom: 1px solid rgba(201,169,110,0.15);
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    .trust-bar .score {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 4rem;
-      color: var(--gold);
-      line-height: 1;
-    }
-    .trust-bar .stars-big { color: #f5c518; font-size: 1.6rem; letter-spacing: 0.15em; margin: 0.5rem 0; }
-    .trust-bar .count { font-size: 0.825rem; color: #ffffff; letter-spacing: 0.18em; text-transform: uppercase; }
-    .trust-bar .label { font-size: 0.792rem; color: #ffffff; margin-top: 0.5rem; letter-spacing: 0.12em; text-transform: uppercase; }
-
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      padding: 4rem 2rem 6rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .r-card {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(201,169,110,0.12);
-      padding: 2.2rem;
-      transition: border-color 0.4s, background 0.4s;
-    }
-    .r-card:hover { border-color: rgba(201,169,110,0.35); background: rgba(201,169,110,0.03); }
-    .r-stars { color: #f5c518; font-size: 0.9rem; letter-spacing: 0.08em; margin-bottom: 0.8rem; }
-    .r-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.05rem;
-      color: var(--gold-light);
-      margin-bottom: 0.6rem;
-      letter-spacing: 0.06em;
-    }
-    .r-text {
-      font-size: 0.88rem;
-      color: #ffffff;
-      line-height: 1.75;
-      margin-bottom: 1rem;
-      font-style: italic;
-    }
-    .r-treatment {
-      font-size: 0.65rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--gold-light);
-    }
-
-    @media (max-width: 768px) {
-      .reviews-grid { grid-template-columns: 1fr; padding: 2rem 1.2rem 4rem; }
-    }
-  </style>
+  <title>Bewertungen – Moon &amp; Sun Head Spa St. Pölten</title>
+  <meta name="description" content="Über 70 echte Kundenbewertungen zu Head Spa, ASMR &amp; Kobido Lifting bei Moon &amp; Sun Head Spa in St. Pölten. Bewertung: 5.0 / 5.">
+  <link rel="stylesheet" href="../css/site.css?v=10">
 </head>
-<body class="subpage-body">
-<header class="subpage-header">
-  <a href="../index.html"><img src="../images/logo-white.png" alt="Moon & Sun Head Spa" class="header-logo"></a>
-  <nav class="subpage-nav">
-    <a href="../index.html">Home</a>
-    <div class="nav-dropdown">
-      <a href="#">Angebote</a>
-      <div class="dropdown-menu">
-        <a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a>
-        <a href="angebote-together.html">Astral Aura Together</a>
-        <a href="angebote-nacken.html">ASMR Nacken- & Schulter-Rituale</a>
-        <a href="angebote-kobido.html">ASMR Kobido Lifting & Kosmetik</a>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="site-logo"><img src="../images/logo-gold.png" alt="Moon &amp; Sun Head Spa" width="600" height="501"></a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <div class="nav-dropdown">
+        <button type="button" aria-haspopup="true">Angebote</button>
+        <div class="dropdown-menu">
+          <a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a>
+          <a href="angebote-together.html">Astral Aura Together</a>
+          <a href="angebote-nacken.html">ASMR Nacken &amp; Schulter</a>
+          <a href="angebote-kobido.html">ASMR Kobido Lifting &amp; Kosmetik</a>
+          <a href="angebote-body-kur.html">Body Kur</a>
+          <a href="angebote-better-pelvi.html">Better Pelvi</a>
+        </div>
       </div>
+      <a href="preisliste.html">Preise</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="bewertungen.html" aria-current="page">Bewertungen</a>
+      <a href="gutscheine.html">Gutscheine</a>
+    </nav>
+    <div class="header-end">
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" rel="noopener" class="btn header-cta">Termin buchen</a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
     </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <button class="close-btn" id="mobileNavClose" aria-label="Menü schließen">✕</button>
+  <div class="group">
+    <span class="label">Angebote</span>
+    <a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a>
+    <a href="angebote-together.html">Astral Aura Together</a>
+    <a href="angebote-nacken.html">ASMR Nacken &amp; Schulter</a>
+    <a href="angebote-kobido.html">ASMR Kobido Lifting &amp; Kosmetik</a>
+    <a href="angebote-body-kur.html">Body Kur</a>
+    <a href="angebote-better-pelvi.html">Better Pelvi</a>
+  </div>
+  <div class="group">
+    <a href="../index.html">Home</a>
+    <a href="preisliste.html">Preise</a>
     <a href="ueber-uns.html">Über uns</a>
     <a href="bewertungen.html">Bewertungen</a>
-    <a href="preisliste.html">Preisliste</a>
     <a href="gutscheine.html">Gutscheine</a>
     <a href="schulungen.html">Schulungen</a>
-    <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
-    <span class="phone-nav">+43 690 10085496</span>
-    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-nav">Termin buchen</a>
-  </nav>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-</header>
-<div class="mobile-nav-overlay" id="mobileNavOverlay">
-  <button class="close-btn" id="mobileNavClose">✕</button>
-  <a href="../index.html">Home</a>
-  <a href="angebote-astral-aura.html">Astral Aura Ritual</a>
-  <a href="angebote-together.html">Astral Aura Together</a>
-  <a href="angebote-nacken.html">Nacken & Schulter</a>
-  <a href="angebote-kobido.html">Kobido Lifting</a>
-  <a href="ueber-uns.html">Über uns</a>
-  <a href="bewertungen.html">Bewertungen</a>
-  <a href="preisliste.html">Preisliste</a>
-  <a href="gutscheine.html">Gutscheine</a>
-  <a href="schulungen.html">Schulungen</a>
-  <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
-  <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="mobile-book-btn btn-beige">Termin buchen</a>
+  </div>
+  <a href="https://calendly.com/moon_sunheadspa" target="_blank" rel="noopener" class="btn">Termin buchen</a>
+  <p class="phone"><a href="tel:+4369010085496" style="font-family:inherit;font-size:inherit;display:inline;color:inherit;">+43 690 10085496</a></p>
 </div>
 
-<div class="subpage-banner">
-  <span class="eyebrow">Erfahrungen unserer Gästinnen</span>
-  <h1>Was unsere Gäste sagen.</h1>
-  <p>Echte Worte. Echte Wirkung. Echte Menschen, die sich etwas Besonderes gegönnt haben.</p>
-</div>
+<main>
 
-<!-- TRUST BAR -->
-<div class="trust-bar">
-  <a href="https://www.google.com/search?newwindow=1&sca_esv=525e608177515078&rlz=1C1VDKB_deAT1100AT1100&sxsrf=ANbL-n5ISkxvUSL3WzgaM622vLfiDiogyQ:1779443523035&q=moon+%26+sun+head+spa&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOew2WnALeMXQHGhvKG3_fDE7JaD40Zwc0R7ZVdfSJbOY6JiTyZv8C0lptq8OFnPcddgI99M%3D&uds=ALYpb_nUOii3xq83QISjOGo-FImByzoc3_gQ5LaAHXL8FauFBUbus_5qfGyvnJHK77XQ3gMi2VFTqm7hYJxd_U0R4gIrDrNfO7cV5VxTcQFS-SOgI4nDu7c&sa=X&ved=2ahUKEwiMjdrYz8yUAxVLgf0HHerLMKkQ3PALegQIHBAE&biw=1536&bih=738&dpr=1.25" target="_blank" style="background:var(--beige); color:var(--black); border:none; padding:0.55rem 1.4rem; font-family:'Inter',sans-serif; font-size:0.715rem; letter-spacing:0.18em; text-transform:uppercase; cursor:pointer; transition:background 0.3s; white-space:nowrap; text-decoration:none; display:inline-block;" onmouseover="this.style.background='var(--gold)'" onmouseout="this.style.background='var(--beige)'">Teile deine Erfahrungen</a>
-  <div class="score">5.0</div>
-  <div class="stars-big">★★★★★</div>
-  <div class="count">Über 70 Bewertungen</div>
-  <div class="label">Erfahrungen unserer KundInnen</div>
-</div>
-
-<!-- ALL REVIEWS -->
-<div class="reviews-grid">
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Martina</div>
-    <p class="r-text">„Die Kontaktaufnahme war unkompliziert und sehr nett. Das Willkommen zum Termin war herzlich, und man fühlt sich in den stimmungsvollen Räumen sofort wohl. Bei einem Gespräch vor der Behandlung wurde die Vorgehensweise erklärt. Auf der bequemen Liege, in eine weiche Decke gehüllt, genießt man — es wird gekämmt, massiert, gestrichen, geölt, gesalbt, begleitet von sanften ASMR Geräuschen. Top! Sofort wieder."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Daniela</div>
-    <p class="r-text">„Wenn wer Entspannung sucht ist er hier bestens aufgehoben. Die Behandlung ist ganz einfach großartig, habe mich danach total entspannt gefühlt."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Susanne</div>
-    <p class="r-text">„Ich habe mir eine Gesichtsmassage gegönnt und war sehr zufrieden!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Bettina</div>
-    <p class="r-text">„Ich habe mich rundherum wohl gefühlt. Ein kleiner Kurzurlaub, den ich öfter wiederholen möchte. Vielen lieben Dank dafür!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Manuela</div>
-    <p class="r-text">„Noch nie fühlte sich meine Kopfhaut so entspannt und gepflegt an. Kann es jeden nur empfehlen der sich beim Relaxen auch was Gutes tun will."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Julia</div>
-    <p class="r-text">„Ich bin wirklich beeindruckt! Die Atmosphäre, die Art von Aysun — alles dafür perfekt um sich entspannen zu können. Es war meine erste Head Spa, würde ich es aber jedem empfehlen!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Petra</div>
-    <p class="r-text">„Sehr entspannend, habe mich hier sehr wohlgefühlt und kann es jedem empfehlen."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Lisa</div>
-    <p class="r-text">„War eine sehr entspannte Stunde. Haben uns sehr wohl gefühlt."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Sanja</div>
-    <p class="r-text">„Es war eine tolle, neue Erfahrung. Absolut empfehlenswert. Hab mich gleich total wohl gefühlt. Super schönes Ambiente. Entspannung pur."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Katharina</div>
-    <p class="r-text">„Den Salon hat Aysun sehr liebevoll gestaltet und lädt zum Entspannen ein! Meine Haare waren danach so gut gepflegt und die Behandlung fand ich großartig! Ein Ort zum Abschalten!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Bettina</div>
-    <p class="r-text">„Ich war das erste Mal bei MoonSun Headspa mit meiner Mama, wir hatten eine Doppelbehandlung und es war sooo entspannend. Das Team ist sehr sympathisch und herzlich und wir kommen auf alle Fälle wieder."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Diana</div>
-    <p class="r-text">„Ich kann es jedem nur empfehlen! Entspannung pur!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Christiane</div>
-    <p class="r-text">„Das Studio ist wunderschön eingerichtet, man fühlt sich ab Sekunde 1 wohl und gut aufgehoben. Die Behandlung war Entspannung pur, ich komme sicher wieder!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Tanja</div>
-    <p class="r-text">„Wir hatten eine Behandlung zu zweit, es war sehr angenehm."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Cathrin</div>
-    <p class="r-text">„Ich hatte die Behandlung Deep Relax und ich liebe sie!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Barbara</div>
-    <p class="r-text">„Es war sehr angenehm, man kann es nur weiter empfehlen."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Barbara</div>
-    <p class="r-text">„Es hat mir sehr gut getan. Sehr entspannend."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Nika</div>
-    <p class="r-text">„Großartige entspannende Erfahrung, man kann wirklich abschalten!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Sophie</div>
-    <p class="r-text">„Es war wirklich ein super Erlebnis. Entspannung pur. Ich komme sicher wieder. Vielen Dank!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Martina</div>
-    <p class="r-text">„Tolles Erlebnis!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Denise</div>
-    <p class="r-text">„Nice, friendly, honest and professional. Recommended!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Jacqueline</div>
-    <p class="r-text">„Mein Freund und ich haben die Behandlung sehr genossen und kommen bei Gelegenheit gerne wieder. Vielen Dank!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Helene</div>
-    <p class="r-text">„Es war extrem entspannend. Jederzeit wieder!!!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Conny</div>
-    <p class="r-text">„Ich bin super entspannt von Aysun nach Hause gegangen! Vielen vielen Dank! Ich kanns nur jedem empfehlen, der sich eine kurze wunderbare Auszeit vom Alltag gönnen möchte."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Liane</div>
-    <p class="r-text">„Super angenehm, die Behandlung war super entspannend. Kann es jeden nur empfehlen."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Sabrina</div>
-    <p class="r-text">„Ich war das 2. Mal da, und es war wieder super. Meine Mama war aus Deutschland zu Besuch und ich habe ihr vorher eine Behandlung geschenkt. Sie war im 7. Himmel."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Diana Sliwa</div>
-    <p class="r-text">„Großartig."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Simone</div>
-    <p class="r-text">„Wird ein monatliches Ritual! War sehr entspannt und toll!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Valerie</div>
-    <p class="r-text">„Immer wieder eine super tolle entspannende Erfahrung! Immer wieder gerne."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Tanja</div>
-    <p class="r-text">„Durch einen glücklichen Zufall bin ich auf diesen Salon gestoßen. Die Partner-Kopfmassage war tiefenentspannend und obwohl ich sehr empfindliche Haut habe, habe ich alle verwendeten Produkte gut vertragen. Ich kann den Salon weiterempfehlen!"</p>
-    <div class="r-treatment">Entspannungsmassage</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Daniela</div>
-    <p class="r-text">„Einfach ein Traum! Super entspannende Behandlungen und sehr sehr freundlich. Man fühlt sich von Beginn bis Ende gut aufgehoben und einfach wohl."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Ajla</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Tanja</div>
-    <p class="r-text">„Super."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Cornelia</div>
-    <p class="r-text">„Einfach unbeschreiblich toll! Kommen auf jeden Fall wieder! Herzensempfehlung!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Denise</div>
-    <p class="r-text">„Unglaublich tolle Erfahrung! Sehr nette Person, man fühlt sich direkt wohl und ist danach sehr entspannt. Perfekt für jeden, der eine kurze Auszeit vom Alltag braucht."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Lisa</div>
-    <p class="r-text">„Man kann es nur weiter empfehlen."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Avdic</div>
-    <p class="r-text">„Super."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Bettina</div>
-    <p class="r-text">„Ich bin ein Mensch der schwer abschalten kann, aber ich bin so begeistert von dieser herrlichen Behandlung und währenddessen bin ich dann doch komplett entspannt. Alle Sinne werden berührt und beruhigt. Aysun, danke — du hast nicht nur meine Haut berührt, sondern mit deiner fürsorglichen Art auch meine Seele. Nach diesem Treatment ist nicht nur meine Kopfhaut sauber, sondern auch meine Gedanken gereinigt."</p>
-    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Manuela</div>
-    <p class="r-text">„Ich war mit einer Freundin dort, nur zum Empfehlen!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Verena</div>
-    <p class="r-text">„Super tolle und entspannende Behandlung!"</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Lea</div>
-    <p class="r-text">„Schöne, entspannte Auszeit vom Alltag, sehr zu empfehlen."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Janine</div>
-    <p class="r-text">„Es war vom Empfang bis zum Schluss alles super! Die Behandlung war so toll, hab mich super entspannen können. Die Atmosphäre — traumhaft. Und es waren beide so so lieb! Absolut empfehlenswert."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Theresa</div>
-    <p class="r-text">„Ich habe mich in den Händen von Aysun sehr wohl gefühlt."</p>
-    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Cornelia</div>
-    <p class="r-text">„Es war eine sehr angenehme Behandlung. Habe es auch weiter empfohlen, weil es wirklich mal was anderes ist."</p>
-    <div class="r-treatment">Entspannungsmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Diana</div>
-    <p class="r-text">„Super Atmosphäre! Alles sauber und gepflegt! Sehr netter Empfang! Alles top — nur zum weiterempfehlen!"</p>
-    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Birgit Trimmel</div>
-    <p class="r-text">„Ich war letzte Woche bei Aysun und ich hab mich sooo unglaublich wohl gefühlt bei ihr. Bei der Behandlung fühlte ich mich, als wär ich in einer anderen Welt abgetaucht — unglaublich wie sie das gemacht hat!! Ich kann Aysun auf alle Fälle von Herzen empfehlen!"</p>
-    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Stefanie</div>
-    <p class="r-text">„Einfach rundum zufrieden und vollständig entspannt."</p>
-    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Lisa</div>
-    <p class="r-text">„Bin total begeistert. Die Behandlung war entspannend, angenehm und Aysun Arslan war auch sehr freundlich und herzlich. Man fühlt sich dort richtig wohl. Es lohnt sich sehr."</p>
-    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
-  </div>
-
-  <div class="r-card fade-in fade-in-delay-1">
-    <div class="r-stars">★★★★★</div>
-    <div class="r-name">Barbara</div>
-    <p class="r-text">„Ich habe mich bei Aysun total wohl gefühlt. Die Atmosphäre war super entspannend. Kann ich nur weiterempfehlen."</p>
-    <div class="r-treatment">Kopfmassage · Behandelt von Aysun</div>
-  </div>
-
-</div>
-
-<!-- CTA -->
-<section style="background:#0d0d0d;padding:5rem 2rem;text-align:center;border-top:1px solid rgba(201,169,110,0.15);">
-  <div style="margin-bottom:2.5rem;" class="fade-in">
-    <a href="https://www.google.com/search?newwindow=1&sca_esv=525e608177515078&rlz=1C1VDKB_deAT1100AT1100&sxsrf=ANbL-n5ISkxvUSL3WzgaM622vLfiDiogyQ:1779443523035&q=moon+%26+sun+head+spa&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOew2WnALeMXQHGhvKG3_fDE7JaD40Zwc0R7ZVdfSJbOY6JiTyZv8C0lptq8OFnPcddgI99M%3D&uds=ALYpb_nUOii3xq83QISjOGo-FImByzoc3_gQ5LaAHXL8FauFBUbus_5qfGyvnJHK77XQ3gMi2VFTqm7hYJxd_U0R4gIrDrNfO7cV5VxTcQFS-SOgI4nDu7c&sa=X&ved=2ahUKEwiMjdrYz8yUAxVLgf0HHerLMKkQ3PALegQIHBAE&biw=1536&bih=738&dpr=1.25" target="_blank" style="background:var(--beige); color:var(--black); border:none; padding:0.55rem 1.4rem; font-family:'Inter',sans-serif; font-size:0.715rem; letter-spacing:0.18em; text-transform:uppercase; cursor:pointer; transition:background 0.3s; white-space:nowrap; text-decoration:none; display:inline-block;" onmouseover="this.style.background='var(--gold)'" onmouseout="this.style.background='var(--beige)'">Teile deine Erfahrungen</a>
-  </div>
-  <span class="eyebrow fade-in">Werde auch du Teil dieser Erfahrungen</span>
-  <h2 class="fade-in fade-in-delay-1">Deine Ruhe wartet.</h2>
-  <div style="margin-top:2.5rem;" class="fade-in fade-in-delay-2">
-    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-beige" style="font-size:.75rem;padding:1.1rem 3rem;">Jetzt Termin buchen →</a>
+<section class="page-head page-head--center">
+  <div class="wrap">
+    <span class="label">Erfahrungen unserer Gästinnen</span>
+    <h1>Was unsere Gäste sagen.</h1>
+    <p class="lead">Echte Worte. Echte Wirkung. Echte Menschen, die sich etwas Besonderes gegönnt haben.</p>
+    <div class="score">
+      <span class="big">5,0</span>
+      <span><span class="stars">★★★★★</span><br><span class="muted">Über 200 Bewertungen auf Google &amp; Treatwell</span></span>
+    </div>
+    <div class="btn-row" style="justify-content:center;">
+      <a href="https://www.google.com/search?newwindow=1&amp;sca_esv=525e608177515078&amp;rlz=1C1VDKB_deAT1100AT1100&amp;sxsrf=ANbL-n5ISkxvUSL3WzgaM622vLfiDiogyQ:1779443523035&amp;q=moon+%26+sun+head+spa&amp;si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOew2WnALeMXQHGhvKG3_fDE7JaD40Zwc0R7ZVdfSJbOY6JiTyZv8C0lptq8OFnPcddgI99M%3D&amp;uds=ALYpb_nUOii3xq83QISjOGo-FImByzoc3_gQ5LaAHXL8FauFBUbus_5qfGyvnJHK77XQ3gMi2VFTqm7hYJxd_U0R4gIrDrNfO7cV5VxTcQFS-SOgI4nDu7c&amp;sa=X&amp;ved=2ahUKEwiMjdrYz8yUAxVLgf0HHerLMKkQ3PALegQIHBAE&amp;biw=1536&amp;bih=738&amp;dpr=1.25" target="_blank" rel="noopener" class="btn btn--ghost">Teile deine Erfahrungen</a>
+    </div>
   </div>
 </section>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-col">
-        <img src="../images/logo-white.png" alt="Moon & Sun Head Spa Logo" class="footer-logo">
-        <p>Unterwagramerstraße 47/2<br>3100 St. Pölten · Österreich</p>
+<section class="section">
+  <div class="wrap">
+    <div class="review-wall">
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Sehr entspannend und ganz liebe Studiobetreiber!“</p>
+        <cite>Nicole M.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte eine Head Spa Behandlung mit Gesichtsmasssge. Es war ein tolles Erlebnis! Sehr angenehm. Ich fand es auch super, dass werden der Behandlung nicht kommuniziert wurde, sodass ich mich total entspannen konnte. Danke Aysun für die tolle Behandlung 👍🏻🪷“</p>
+        <cite>Sandras Wohlfühlfriseur<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Kannn ich nur jedem empfehlen, der eine kurze Auszeit braucht! Ein ganz liebes und gemütliches Studio! 2 ganz liebe Menschen,die ihr Handwerk verstehen! Werde auf jedenfall wieder kommen!!!“</p>
+        <cite>Martina F.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war heute zum ersten Mal dort, aber sicher nicht zum letzten Mal! Es war wirklich super entspannend und einmal was ganz Anderes. Sehr zu empfehlen!“</p>
+        <cite>Flora W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Eine Oase der absoluten Entspannung wie auf einer Wolke!<br>Mein Besuch war einfach magisch! Ich habe mich vom ersten Moment an unfassbar wohl und gut aufgehoben gefühlt.<br>Die Behandlung war der absolute Wahnsinn man kann hier komplett vom Alltag abschalten, den Kopf frei bekommen und tief durchatmen. Die Behandlungen werden so sanft und professionell durchgeführt, dass man sich wirklich fühlt, als würde man auf einer Wolke schweben. Es ist extrem entspannend für Körper und Geist.<br>Wer eine Auszeit vom Stress sucht und sich etwas wirklich Gutes tun möchte, ist hier genau richtig. Ich komme ganz bestimmt wieder! Vielen Dank für dieses wunderbare Erlebnis!“</p>
+        <cite>Melanie<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wunderschönes und ruhiges Ambiente! Alles sehr gepflegt!<br>Ich genoss ein echtes Wohlfühlpaket und habe mich schon lange nicht mehr so wohl gefühlt und ein so schönes Hautbild gehabt.<br>Vielen Dank ich komme gerne wieder ;)“</p>
+        <cite>Stefanie K.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe mit einer Freundin eine Doppelheadspabehandlung gebucht. Das Studio hat ein sehr schönes Ambiente, es gibt ausreichend kostenlose Parkplätze vor Ort, die Behandlerinnen waren sehr freundlich. Gut hat uns auch gefallen, dass in der Basic-Behandlung eine kurze Gesichtsmassage inkludiert war, währenddessen eine Haarpflege einwirkte.“</p>
+        <cite>Sophie<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ein riesiges Dankeschön an das wundervolle Team von Moon &amp; Sun Head Spa Beauty &amp; Wellness! Ich hatte gerade die Gesichtsmassage und Kopfhautbehandlung und was soll ich sagen? Ich bin einfach überwältigt.<br>Man wird hier mit so viel Liebe, Wärme und Herzlichkeit empfangen, dass der Stress des Alltags schon beim Betreten des Studios wie weggeblasen ist. Die Behandlung fühlte sich an wie eine sanfte Umarmung für die Seele. Ich habe mich wirklich gefühlt, als würde ich auf einer Wolke schweben. Es ist unglaublich, wie tief man hier abschalten und auftanken kann.<br>Danke für diese magische Wohlfühlauszeit und eure fantastische Arbeit. Ihr macht das mit so viel Leidenschaft ich freue mich jetzt schon riesig auf meinen nächsten Besuch bei euch!“</p>
+        <cite>Manuela<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„War ein tolles und sehr angenehmes Erlebis. Die Dame dort sehr freundlich und hat mir gute Produkte weiter empfohlen. Ich kann euch diese Erfahrung nur empfehlen“</p>
+        <cite>Christian H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super Entspannung, tolle einzigartige Behandlung mit Wau Effekten, tolle Atmosphäre, gönne ich mir sicher wieder 😍“</p>
+        <cite>Doris W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„ASMR zum ersten Mal… aber sicher nicht zum letzten Mal!!! Sehr angenehm und wohltuend!!! Professionalität von der ersten Sekunde spürbar und trotzdem sehr empathischer Umgang! Danke Aysun 😍“</p>
+        <cite>Martina L.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe die Deep Relax Behandlung gemacht und bin wirklich begeistert. Die Behandlung war wirklich entspannend, professionell und für mich genau das Richtige, um komplett abzuschalten. Besonders die Kombination aus ASMR, Kopfhautpflege, Massage und der ruhigen Atmosphäre hat mir sehr gut gefallen.<br>Absolute Empfehlung für alle, die sich eine echte Auszeit gönnen möchten. Ich komme definitiv wieder!“</p>
+        <cite>Sissi H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Angenehme Atmosphäre, sehr sehr nettes Personal, Behandlung war echt super und sooo entspannend“</p>
+        <cite>Bettina W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Dieses Headspa war mit Abstand die entspannendste Stunde die ich seit langem hatte! Ich habe mich sehr wohl und willkommen gefühlt, und auf meine Vorlieben als chronisch kranke wurde viel Rücksicht gegeben. Meine Haare fühlen sich toll an, genauso wie meine Haut. Ich kann dieses spa nur empfehlen und komme auf jeden Fall wieder!<br>Liebe Grüße, Nina“</p>
+        <cite>Nina A.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wir waren zu zweit im Head Spa Moon and Sun und hatten eine wunderschöne, entspannte Zeit! ✨ Die Behandlung war unglaublich angenehm, die Atmosphäre sehr beruhigend und das Team super freundlich. Perfekt, um gemeinsam mit der besten Freundin abzuschalten und sich etwas Gutes zu tun. Wir kommen auf jeden Fall wieder! 💕“</p>
+        <cite>Ramona L.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Vielen Dank für die tolle Behandlung mit hochwertigen Dalton Produkten! Eine ganz tolle Frau die Aysun! Ich komme gerne wieder! Glg Petra♥️“</p>
+        <cite>Petra S.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Head Spa Behandlung war sehr angenehm und erholsam.<br>Würde ich sofort wieder machen und weiterempfehlen!“</p>
+        <cite>Kerstin G.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Sehr angenehme Atmosphäre, tolle und professionelle Behandlung, kompetente Kosmetikerin. Immer wieder gerne👍“</p>
+        <cite>Kerstin U.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„War alles sehr entspannend ! Angenehme Atmosphäre! Außergewöhnlich freundlich ! Sehr zum empfehlen 👏“</p>
+        <cite>Marion K.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe Moon &amp; Sun über Instagram vorgeschlagen bekommen und war sofort neugierig auf dieses tolle Angebot der ASMR Facial Behandlung. Schon die Terminvereinbarung war sehr rasch und total nett, man bekommt 3 Termine vorgeschlagen und sollte keiner in Frage kommen darf man sich auch melden um einen passenden Termin zu finden. Aysun bietet auch Sonntagstermine an was mich persönlich sehr überrascht hat, aber für mich war es super passend. Schon der Empfang war sehr nett, man fühlt sich gleich wohl im wirklich sehr stillvollen Studio. Kurze Anamnese und Aufklärung was gemacht wird und dann ging es schon los. 90min pure Entspannung für Geist und Körper man fühlt sich danach wie nach einem Spatag völlig entspannt und eine Haut wie mit 20 :-).<br>Ich kann es nur jedem empfehlen der sich etwas gutes tun möchte. Ich komme bestimmt bald wieder.“</p>
+        <cite>Sandra B.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wir hatten eine Doppelbehandlung Head Spa, es war sehr entspannend und entschleunigend. Mir persönlich hat die Gesichtsmassage und die Kopfmassage besonders gut gefallen. Die Gerüche der Pflegeprodukte waren angenehm. Danke vielmals.“</p>
+        <cite>Berina N.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ein tolles außergewöhnliches Erlebnis und Entspannung durch und durch!“</p>
+        <cite>Antonia J.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe mich bei Moon &amp; Sun Head Spa Beauty &amp; Wellness vom ersten Moment an unglaublich wohl und willkommen gefühlt. Die Behandlung war einfach traumhaft – unglaublich entspannend, professionell und mit ganz viel Liebe zum Detail. Man merkt sofort, dass Aysun ihre Arbeit mit Leidenschaft macht. 💛<br>Ich konnte komplett abschalten, den Alltag vergessen und bin danach tiefenentspannt und rundum verwöhnt nach Hause gegangen. Auch die Atmosphäre ist wunderschön und lädt sofort zum Wohlfühlen ein.<br>Für mich definitiv nicht der letzte Besuch! Ich freue mich schon auf das nächste Mal und kann Moon &amp; Sun von Herzen weiterempfehlen. ✨“</p>
+        <cite>Claudia L.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super angenehme und entspannende Atmosphäre. Einfach zum wohlfühlen. ASMR deluxe :) immer gerne wieder. DANKE für die tolle Auszeit 😇“</p>
+        <cite>KaVo<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe die Behandlung bei Aysun sehr genossen und mich von der ersten Minute an rundum wohlgefühlt. Die Behandlung war unglaublich entspannend und genau das Richtige, um dem Alltag für eine Weile zu entfliehen und vollkommen abzuschalten.<br>Aysun ist sehr herzlich, aufmerksam und bemüht, eine angenehme Wohlfühlatmosphäre zu schaffen. Ihre wertvollen Tipps und die liebevolle Art haben die Behandlung zu einer ganz besonderen Erfahrung gemacht.<br>Ich habe mich danach wunderbar erholt und tiefenentspannt gefühlt. Eine absolute Empfehlung für alle, die sich selbst etwas Gutes tun und eine kleine Auszeit vom Alltag genießen möchten. Vielen Dank, liebe Aysun, für diese wundervolle Erfahrung - ich komme sehr gerne wieder! ✨“</p>
+        <cite>Anita W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Gestern hatte ich meine erste Head Spa (Deep Relax) Behandlung. Und ich war einfach total begeistert. Aysun ist super freundlich, das Ambiente einfach entspannend und die Behandlung meeeeeega toll. Ich komme sicher wieder😍“</p>
+        <cite>Lisa S.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war zum ersten Mal hier und habe eine Deep Relax Behandlung gewählt.<br>Die Atmosphäre der Räumlichkeiten gibt einem sofort das Gefühl der Entspannung. Aysun ist sehr einfühlsam und die Behandlung war einfach unbeschreiblich toll ✨<br>Ich werde auf jeden Fall wieder kommen.“</p>
+        <cite>Janine L.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Absolut top!<br>Freundlich, kompetent und 100 % tiefentspannend.<br>Empfehlen für alle, die Gesichtspflege auf höchstem Niveau mit energetischer Auszeit verbinden möchten.<br>Ich freue mich schon auf meine nächste Behandlung!“</p>
+        <cite>Christina M.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Einfach herrlich..danke....gönn es dir...ich empfehle Sie sehr😘😘❣️🌹🙏“</p>
+        <cite>Carein<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Einfach herrlich 😊❤️“</p>
+        <cite>Brigitte B.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Vollkommene Entspannung pur!<br>Echt toll gemacht!<br>Kann ich nur weiterempfehlen!<br>Sehr freundlich und nett!<br>Ich komme sicher wieder“</p>
+        <cite>Katharina B.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Angenehme Atmosphäre, sehr entspannend und wohltuend. Rundum ein tolles Service.“</p>
+        <cite>Elisabeth W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Schon beim Ankommen haben wir uns sofort wohlgefühlt. Die beiden Frauen sind unglaublich freundlich, herzlich, engagiert und sehr zuvorkommend. Man merkt sofort, wie viel Leidenschaft sie in ihre Arbeit stecken und wie wichtig es ihnen ist, dass sich ihre Gäste rundum wohlfühlen.<br>Auch die Räumlichkeiten sind wunderschön gestaltet. Alles ist sehr stilvoll, sauber und mit viel Liebe zum Detail eingerichtet. Die angenehme Atmosphäre lädt direkt zum Entspannen ein und man kann den Alltag schon beim Betreten hinter sich lassen.<br>Die Behandlung selbst war einfach unbeschreiblich. So eine tiefe Entspannung haben wir selten erlebt. Jeder einzelne Moment war wohltuend und man fühlt sich danach wie neu geboren. Es war eine perfekte Auszeit für Körper und Geist.<br>Vielen Dank für dieses besondere Erlebnis und die herzliche Betreuung. Wir haben jede Minute genossen, werden euch definitiv weiterempfehlen und freuen uns jetzt schon auf unseren nächsten Besuch!“</p>
+        <cite>Nadja D.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe die Relax Basic Behandlung bei Aysun genossen und bin sehr zufrieden. Die Behandlung war unglaublich entspannend und genau das Richtige, um vom Alltag abzuschalten. Aysun hat sich viel Mühe gegeben und für eine angenehme Wohlfühlatmosphäre gesorgt.<br>Ich habe mich danach sehr erholt gefühlt und kann die Behandlung bei Aysun jedem weiterempfehlen. Vielen Dank für die tolle Erfahrung!“</p>
+        <cite>Barbara<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wir waren heute zu zweit beim Head Spa und es war wirklich ein sehr tolles Erlebnis. Besonders lieb fanden wir, dass Aysun uns sogar extra einen Sondertermin ermöglicht hat, obwohl an dem Tag eigentlich geschlossen gewesen wäre.<br>Schon das Ankommen war sehr angenehm und entspannt, und die Behandlung selbst war einfach toll. Es gab so viele verschiedene kleine Schritte, Massagen und Anwendungen, dass man die ganze Zeit fast im Dämmerschlaf war und sich nur gefragt hat, was als Nächstes kommt.<br>Alles war sehr herzlich, ruhig und ohne Stress. Für uns war es ein perfektes Geschenk und eine klare Empfehlung.“</p>
+        <cite>Matthias T.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe bereits über die sozialen Medien viele Videos von einem head spa gesehen und bin dann auf Ayusn gestoßen. Ich muss sagen es war ein Erlebnis der besonderen Art. Ein jeder Handgriff sitzt und man kann perfekt abschalten. Und die Haare danach sind super gepflegt. Gerne wieder“</p>
+        <cite>Katja H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte bereits meine ersten Behandlungen und bin schon jetzt sehr zufrieden. Aysun ist sehr freundlich, kompetent und nimmt sich Zeit, alles ausführlich zu erklären. Man fühlt sich von Anfang an gut aufgehoben. Die Atmosphäre ist angenehm und entspannend, und meine Haut zeigt bereits erste positive Veränderungen. Ich freue mich auf die weiteren Termine und kann sie definitiv weiterempfehlen.“</p>
+        <cite>Tessa C.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Absolut empfehlenswert 🤩! Entspannung pur und die Massagen ob Gesicht oder Kopf oder Nacken ein Traum! 5x👍🏻👍🏻👍🏻👍🏻👍🏻“</p>
+        <cite>Ute W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„So entspannt rausgekommen wie nur selten ! Tolle Behandlung ! Komme wieder !“</p>
+        <cite>Sandra S.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Richtig tolles head spa ich kann es nur weiterempfehlen. Ich werde sicher wieder dort hingehen“</p>
+        <cite>Angela P.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war heute dort und bin voll begeistert! Die Gesichtsbehandlung war sehr professionell und ich bin voll entspannt nach Hause gefahren.“</p>
+        <cite>Carina S.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Es war ein wunderbares Erlebnis. Die Umgebung war sehr sauber und ruhig, und die Mitarbeiter waren überaus aufmerksam und freundlich. Ich habe mich während der gesamten Behandlung sehr wohl gefühlt und bin danach erfrischt und ausgeruht nach Hause gegangen. Ich kann es jedem empfehlen, der eine Auszeit sucht. Vielen Dank! 🌸“</p>
+        <cite>Ece A.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super Ambiente, wunderbare Head Spa Behandlung zum Entspannen und sehr liebe und kompetente Inhaberin. Ich bin rundum zufrieden, es hat wirklich alles gepasst. Ich kann dieses Unternehmen von Herzen weiterempfehlen!“</p>
+        <cite>Vanilla C.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wenn man spüren möchte, wie es sich nahe den Wolken anfühlt, dann ist man hier genau richtig. Ein Traum für<br>Jeden gestressten Körper und Kopf.<br>Immer wieder und wieder und wieder….. ⭐️“</p>
+        <cite>Michaela R.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wundervolle Erfahrung!<br>Ich kann es sehr zum abschalten empfehlen, es war wunderbar entspannend!<br>Aysun ist so eine liebe und einfühlsame Person. Komme gerne wieder 🫶🏻“</p>
+        <cite>Vicky K.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Top Empfehlung! So eine angenehme ruhige Atmosphäre, wo man den Stress entfliehen kann. Werde es regelmäßig machen.“</p>
+        <cite>Minela P.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Sehr gut, eine außergewöhnliche Massage zur vollkommenen Entspannung, ich kann sie wärmstens empfehlen ❤️“</p>
+        <cite>Roberta M.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Zu meinem Geburtstag habe ich mir den Besuch in dem Wellness Center, und eine Head Spa Deep Relax mit Gesichtsbehandlung gegönnt. Was für ein Erlebnis!!!<br>In dem schönen, und stimmungsvollen Studio fühlt man sich sofort wohl, und wird sehr herzlich empfangen.<br>In einem entspannten Gespräch wird erklärt, wie die Behandlung verläuft, und ob es irgendwelche Allergien oder Besonderheiten gibt, auf die geachtet werden sollte.<br>Man nimmt auf der bequemen Liege Platz, wird in eine kuschelige Decke gehüllt, und schon geht es los.<br>Die Devise lautet:<br>Einfach abschalten und entspannen, und in der Oase der Ruhe gelingt das wunderbar 😊.<br>Es wir massiert, gestrichen, gekämmt, gespült, von verschiedenen sanften Tönen umspielt. Es sind 60 Minuten in der man einfach nur die sanfte Behandlung genießen kann.<br>Dieses Wellness Center ist ein wahrer Schatz im kleinen Wagram, und ich freue mich schon jetzt auf den nächsten Besuch.<br>Vielen Dank liebe Aysun 😊🤗“</p>
+        <cite>Sarianna M.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe sehr kurzfristig einen Termin angefragt und obwohl eigentlich nichts frei war, hat das Team extra versucht, es möglich zu machen – und das hat wirklich super geklappt. Dafür bin ich sehr dankbar. Der Service war sehr professionell, herzlich und man hat sich direkt wohlgefühlt. Alle waren unglaublich freundlich und die Behandlung war top. Klare Empfehlung, ich werde auf jeden Fall nochmal kommen.“</p>
+        <cite>Denise A.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war vor Kurzem bei einem Head Spa und bin wirklich begeistert. Schon beim Eintreten war die Atmosphäre total entspannend, ruhige Musik, angenehmer Duft und ein sehr stilvoll eingerichteter Raum. Man fühlt sich sofort wohl.<br>Die Behandlung selbst war ein echtes Highlight. Zuerst ein warmes Willkommen, dann ging es los mit der Massage und pflegenden Produkten war unglaublich angenehm. Besonders die Kopfmassage war extrem entspannend und hat Verspannungen sofort gelöst.<br>Man merkt, dass hier nicht nur Wellness, sondern auch professionelle Pflege im Mittelpunkt steht.<br>Die Masseurin war sehr freundlich, aufmerksam und hat jeden Schritt erklärt. Insgesamt war es eine perfekte Auszeit vom Alltag.<br>Ich kann ein Head Spa absolut empfehlen, ideal zum Abschalten, Entspannen und um Haaren sowie Kopfhaut etwas Gutes zu tun. Ich komme definitiv wieder!“</p>
+        <cite>Hacer Y.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Sehr freundliches und nettes Team, Termin Vergabe geht einfach und schnell. Behandlung selbst war ein Traum -&gt; pure Entspannung! Wir kommen sehr gerne nocheinmal.“</p>
+        <cite>Mey<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte heute meine erste Behandlung bei Aysun. Ich bin total begeistert. Aysun ist freundlich, sehr sympathisch und weiß was sie macht. Ich war bestimmt nicht das letzte Mal bei Moon and Sun.“</p>
+        <cite>Tina H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super Erlebnis! Mein Partner und ich haben die Partnerbehandlung gemacht - ein richtiges Erlebnis und völlige Entspannung! Ganz toll 🤩🥰“</p>
+        <cite>Katharina K.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Meine Frau und ich waren gemeinsam da.<br>Sogar ich konnte abschalten, das heisst wirklich was. Immer gerne wieder ☀️☀️🌅“</p>
+        <cite>Alexander H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war heute das 1. mal beim Headspa von Aysun. Nach der Behandlung hatte ich eine Entspannung, die ich schon lange nicht mehr spüren durfte. Ich bin sehr dankbar und werde bald wieder einen neuen Termin buchen.<br>Für alle Mamas und Frauen die den Alltag mal hinter sich lassen wollen empfohlen!“</p>
+        <cite>Anna R.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Große ❤️-Empfehlung. Hatte mit einer Freundin eine Doppelbehandlung und es war super entspannend. Wenn man abschalten und genießen möchte, ist man hier genau richtig.<br>Ich komme ganz bestimmt wieder.“</p>
+        <cite>Stephanie W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Hatte eine Doppelbehandlung mit meiner Tochter war seeehrr entspannend. Klare Weiterempfehlung, sollte jeder mind. einmal gemacht haben. Sehr nettes Ambiente, wir haben uns sehr wohl gefühlt.“</p>
+        <cite>Sanja N.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super entspannend, man kann komplett abschalten. Es ist etwas anderes wie eine klassische Massage -&gt; Fokus viel mehr auf Entspannung &amp; Massage am Kopf &amp; Gesicht. Sehr Empfehlenswert“</p>
+        <cite>Julia A.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte bei Moon and Sun Headspa eine ASMR-Behandlung und es war einfach traumhaft. Der gesamte Aufenthalt war unglaublich entspannend – die Geräusche, der Klang und der gesamte Sinneseindruck waren wunderschön und sehr beruhigend. Man konnte sofort abschalten und in eine tiefe Entspannung eintauchen.<br>Es war ein ganz besonderes Erlebnis, das man so wirklich selten hat. Die Gedanken dürfen einfach freien Lauf lassen, man hört auf, ständig an alles zu denken, und fokussiert sich nur auf den eigenen Körper, den Geist und die Sinne. Genau diese Kombination macht die Behandlung so einzigartig.<br>Eine Entspannung für Körper, Geist und Seele – man fühlt sich danach komplett erholt, ruhig und ausgeglichen. Absolut empfehlenswert für alle, die dem Alltag entfliehen und sich selbst etwas Gutes tun möchten. ✨“</p>
+        <cite>Carina P.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich bin rundum begeistert! Von der ersten Minute an habe ich mich willkommen und bestens aufgehoben gefühlt. Die Atmosphäre war unglaublich entspannend – stilvoll eingerichtet, sauber und mit viel Liebe zum Detail gestaltet.<br>Aysun arbeitet hochprofessionell, einfühlsam und mit spürbarer Leidenschaft. Die Behandlung selbst war einfach hervorragend: wohltuend, individuell abgestimmt und von höchster Qualität. Jede Bewegung saß perfekt, und ich konnte vollkommen abschalten und neue Energie tanken.<br>Besonders beeindruckt hat mich die Kombination aus Fachkompetenz, Herzlichkeit und Ruhe. Hier steht das Wohlbefinden der Kundinnen und Kunden wirklich an erster Stelle.<br>Ich komme definitiv wieder und kann es nur weiterempfehlen!“</p>
+        <cite>Vanessa L.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war heute mit meiner Freundin für eine Doppelbehandlung hier. Es war der Wahnsinn. Ich glaub, das ist eine von den besten Sachen, was man für den Körper tun kann. Richtig entspannen und einfach abschalten. Wir kommen auf jeden fall wieder.<br>Vielen Dank für alles!<br>😊😊“</p>
+        <cite>Martina V.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Heute hatte ich meine erste Headspa Behandlung und ich empfehle es jeden. Ich konnte mich richtig entspannen. Freue mich schon auf das nächste Mal. :)“</p>
+        <cite>Frances A.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wir hatten bei Aysun im Moon &amp; Spa eine Doppelbehandlung im Head Spa und sind absolut begeistert. Meine Schwester und ich konnten beide unglaublich gut entspannen – die Behandlung war wohltuend und sehr professionell. Besonders schön fanden wir, dass Aysun sich pro Termin ganze zwei Stunden Zeit nimmt. So entsteht keinerlei Hektik und man kann sowohl vor als auch nach der Behandlung die ruhige, entspannte Atmosphäre in vollen Zügen genießen. Ein echtes Wohlfühlerlebnis – wir kommen definitiv wieder!“</p>
+        <cite>Alice S.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die lange Anreise zur Deep Relax Behandlung hat sich gelohnt. Es war ein wunderbar entspannendes Erlebnis das wir (meine Tochter und ich) sicher wiederholen werden. Alles in allem war harmonisch aufeinander abgestimmt, die ruhige Musik, die sanften Massageanwendungen, die wärme vom Wasser... etc. Ein schönes Studio von geführt von einer sehr netten Eigentümerin Aysun und einer genauso lieben Mitarbeiterin Ajla.<br>Vielen Dank für die viel zu schnell vergangangene Stunde bei euch.“</p>
+        <cite>Verena W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Heute war ich zum ersten Mal bei Aysun und es war einfach mega entspannend. Ich habe mich sofort wohlgefühlt und konnte richtig abschalten. Ich komme sehr gerne wieder und gönne mir erneut eine Auszeit!“</p>
+        <cite>Conny H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte eine wunderbare Erfahrung bei Moon&amp;Sun Headspa. Sehr entspannte Atmosphäre, äußerst professionelle Behandlung und liebevolle Betreuung. Ein echtes Wohlfühlerlebnis – klare Empfehlung, ich komme gerne wieder“</p>
+        <cite>Doris K.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„War wirklich sehr entspannt und würde es sofort wieder machen . Ich war dort mit meiner Mama und wir waren beider sehr relaxt“</p>
+        <cite>Rebecca W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Man merkt sofort, wie viel Wert hier auf Qualität und Wohlbefinden gelegt wird. Die Behandlung war ein echtes Erlebnis – vielen Dank!“</p>
+        <cite>Anita G.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Absolut empfehlenswert!“</p>
+        <cite>Betina T.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Einfach wow!“</p>
+        <cite>Simone B.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Heute bei Moon &amp; Sun Headspa gewesen und ich sag es ganz ehrlich: selten habe ich mich so tief entspannt gefühlt.<br>Das ist nicht einfach nur Wellness – das ist komplette Abschaltung für Kopf und Körper. Gedanken aus, Stress weg, einfach nur genießen.<br>Egal ob mit der besten Freundin, der Mama oder alleine – es ist genau die Art von Auszeit, die man sich viel öfter gönnen sollte. Man merkt erst dort, wie sehr man sie eigentlich braucht.<br>Es tut unfassbar gut, wirkt noch lange nach und fühlt sich an wie ein Reset.<br>Absolute Herzensempfehlung. Jeden einzelnen Cent wert und auch ein perfektes Geschenk für jemanden, dem man wirklich etwas Gutes tun will. ✨“</p>
+        <cite>mrslina<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich kann es jedem nur empfehlen sich diese Auszeit vom Alltagsstress zu gönnen. Man fühlt sich nach der Behandlung tiefenentspannt und rundum zufrieden 🤗“</p>
+        <cite>Kerstin<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Behandlungen bei Aysun sind einfach ein Traum! Hinkommen, wohlfühlen und einfach entspannen - immer wieder gerne!“</p>
+        <cite>WickedStrawberry88<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„War mit meiner Freundin in einer Doppelbehandlung.<br>Es war Entspannung pur, jeder Zeit wieder!!!“</p>
+        <cite>Gabriela S.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich kann es nur empfehlen. Es wird alles erklärt und dann heißt es entspannen und genießen.“</p>
+        <cite>Brigitte C.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ganz toll 😊 und super liebes Team ❤️“</p>
+        <cite>Cindylinde<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Eine Top Empfehlung für alle die einfach mal abschalten wollen. Totale Entspannung pur.<br>Hatte die Behandlung Astral Aura Ritual mit Gesichtsbehandlung. Ich habe es genossen. Und werde auf jedenfall öfters mir so eine Behandlung gönnen.“</p>
+        <cite>Jennifer D.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ein wunderbarer Ort und eine sehr tolle und mehr als angenehme Behandlung. Wir haben uns für eine Doppelbehandlung entschieden und jede Sekunde in vollen Zügen genossen. Es war sicher nicht unser letztes Mal. Ein perfektes Erlebnis um dem Alltagsstress zu entfliehen.“</p>
+        <cite>Iris B.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war heute mit einer Freundin bei einer Doppelbehandlung Deep Relax ❤️🙌🏻 absolute Weiterempfehlung aus tiefsten Herzen!<br>Es war eine wundervolle Atmosphäre, Aysun ist wirklich ein Herzensmensch und hat eine wundervolle beruhigende Art❤️🙌🏻💯 wir waren nicht das letzte mal dort. Wenn man aus einem stressigen Alltag mal die Seele baumeln lassen möchte, einfach bei Moon &amp; Sun Head Spa vorbeischauen🙌🏻“</p>
+        <cite>Denise Z.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Hatte heute meine erste Headspa- Behandlung, es war total entspannend und werd ich auf alle Fälle wieder bei ,,Moon&amp;Sun Head Spa" machen, ich kann es jeden weiterempfehlen der eine Auszeit und Entspannung nötig hat. Man merkt dass Aysun das mit Liebe macht und darum fühlt man sich sehr wohl bei ihr. Danke für diese Top Behandlung!“</p>
+        <cite>Marlies V.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Begrüßung war sehr nett, ich habe mich super wohlgefühlt. Die Headspa-Behandlung hat mich total erfrischt/belebt.“</p>
+        <cite>Roberta O.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Aysun,ein ❤️ens Mensch,einfühlsam und soooo lieb🥰das Head Spa,,einzigartig,,kann man nicht mit Worten beschreiben🥰🥰🥰komme wieder“</p>
+        <cite>Silvia H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war beim Moon and Sun Headspa St. Pölten und es war einfach traumhaft! 🌙☀️<br>Die Atmosphäre ist total entspannend, Aysun ist unglaublich herzlich und professionell. Die Headspa-Behandlung war pure Erholung – meine Kopfhaut und Haare fühlen sich wunderbar frisch und leicht an. Die Gesichtsbehandlung war auch sehr toll und angenehm.<br>Absolute Empfehlung für alle, die sich etwas Gutes tun wollen! 💆‍♀️✨“</p>
+        <cite>Sara T.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Meine Verlobte und ich waren gestern bei der Doppelbehandlung beim Moon and Sun Head Spa, meine Erwartungen wurden übertroffen. Ich habe mich so entspannen können das ich sogar eingeschlafen bin. Ich kann es wirklich jedem empfehlen der ein wenig Entspannung braucht.“</p>
+        <cite>Phillipp P.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„I Ich hatte kürzlich eine Head-Spa-Behandlung und bin absolut begeistert! Die Atmosphäre war unglaublich entspannend, mit sanfter Musik und einem angenehmen Duft, der sofort für Wohlbefinden sorgte. Die Kopfhautmassage war himmlisch – genau die richtige Mischung aus sanft und belebend. Meine Kopfhaut fühlt sich erfrischt an, und meine Haare wirken gesünder und glänzender.<br>Die Inhaberin war sehr freundlich und professionell, und ich habe mich von Anfang an wohlgefühlt. Wer nach einer Auszeit vom stressigen Alltag sucht, sollte sich eine Head-Spa-Behandlung gönnen. Ich komme definitiv wieder!“</p>
+        <cite>Mert<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Asyun ist eine sehr aufmerksame Persönlichkeit. Ihr ruhige und besonne Art, rundet die Atmosphäre im Head Spa ab.<br>Ich habe den Tag bei Ihr sehr genossen und kann die Behandlung jeden empfehlen, der dem Alltagsstress entfliehen möchte.<br>Mit entspannter Musik, einer wärmenden Decke und wohltuenden Düfte, wirst du auf eine wohlfühl Reise - von Ihr - mitgenommen.<br>Es ist eine außergewöhnliche, schöne und wohltuende Entspannungsreise.<br>Ich war für mich, nicht das letzte mal, bei Ihr.<br>Danke Asyun“</p>
+        <cite>Jessica E.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wenn man eine Auszeit aus dem hektischen Leben braucht, ist das das Beste was man für sich selbst machen kann! Ich habe mich sofort wohl und gut aufgehoben gefühlt. Entspannung pur und man hat danach den Kopf so richtig frei. Obwohl ich vom Dienst ausgelaugt war, hatte ich danach wieder richtig Energie. Toll, dass St. Pölten sowas bekommen hat und danke Aysun für diese Erfahrung! Man ist bei dir in den besten Händen.😊“</p>
+        <cite>Martina Ö.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Pure Erholung..!<br>„Die Head Spa Behandlung war einfach fantastisch! Sehr entspannend und wohltuend. Die Dame war professionell und freundlich, und ich habe mich rundum wohlgefühlt. Meine Kopfhaut fühlt sich frisch und revitalisiert an. Sehr zu empfehlen!“<br>Ich habe mich wie im Urlaub gefühlt.<br>Herzlichen Dank für die tolle Zeit 🥰“</p>
+        <cite>Emel T.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte kürzlich eine Head Spa Behandlung als Geburtstagsgeschenk bekommen ..was soll ich sagen es war das beste was ich je erlebt habe. Eine absolute Entspannung. Aysun rundete mit ihrer angenehmen Art die komplette Atmosphäre ab..ich komme auf jeden Fall wieder und habe es auch meinen Freunden weiterempfohlen“</p>
+        <cite>Nicole O.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ein Treatment der Sonderklasse! Eine Verschmelzung aus Frisörbesuch deluxe, Kosmetik, live ASMR &amp; Energiearbeit. Die liebe Aysun hat hiermit was großartiges geschaffen - ein ganzheitliches Erlebnis, dass einem im stressigen Alltag in andere Sphären driften lässt &amp; keine Wünsche offen lässt. Vielen Dank dafür!“</p>
+        <cite>Tina P.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war heute bei einer Deep Relax Behandlung und ich war dann auch wirklich tiefenentspannt. Es gab eine Kopf,Nacken und Schultermassage. Eine kleine Gesichtsbehandlung inkl. Massage. Eine komplette "Kopfbehandlung" mit Haare waschen, massieren und Pflege. Die Produkte die sie verwendet hat rochen auch alle so gut -es war so angenehm, wohltuend, einfach perfekt zum abschalten. Die Inhaberin ist auch ein wirklicher Herzensmensch die ihren Job mit viel Freude macht. Kann es wirklich jedem weiter empfehlen.“</p>
+        <cite>Magdalena H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte heute meinen Head Spa Termin bin dazu extra 45min angereist und es hat sich gelohnt. Super entspannende Massage im Nacken, Gesicht und Kopf. Sowie eine tiefenreinigung meiner Kopfhaut.“</p>
+        <cite>Kerstin<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war heute bei der Head Spa Behandlung. Entspannung pur, das Gefühl es sollte nie aufhören, wirklich sehr empfehlenswert!!! Aysun Arslan, eine sehr kompetente, äußerst freundliche, nette Dame die einem total abschalten lässt. Dankeschön, ich komme auf alle Fälle wieder.“</p>
+        <cite>Brigitte W.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„War zum ersten Mal. Habe mich sehr gut beraten gefühlt und die Behandlung war sehr angenehm. Folgetermin ist schon gebucht.“</p>
+        <cite>Dilek K.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ein Herzenskompliment an das Headspa in St. Pölten – ein Ort, an dem Wohlfühlen und Achtsamkeit spürbar gelebt werden. Die Inhaberin führt ihr Studio mit so viel Liebe zum Detail, Fachwissen und einem feinen Gespür für echte Entspannung. Wer sich selbst etwas Gutes tun möchte, ist hier in den besten Händen. 🌿✨“</p>
+        <cite>Nily<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Absolute Empfehlung!<br>Das war mein erstes Mal &amp; bestimmt nicht das letzte Mal.<br>Sehr entspannend, angenehm &amp; beruhigend 🥰<br>Aysun ist sehr lieb &amp; sympathisch &amp; macht somit die Atmosphäre perfekt 👌🏽“</p>
+        <cite>AnHe<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super entspannend!<br>Tolles Head Spa mit professioneller Behandlung – meine Kopfhaut fühlt sich erfrischt an und ich war selten so entspannt. Komme gern wieder!“</p>
+        <cite>Gül Y.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Nach einem kurzen Einführungsgespäch, in dem alle Schritte der Behandlung gut erklärt werden, startet das sehr wohltuende und entspannende Treatment: Eintauchen in eine Welt von Massage, Ölen, Wasseranwendungen, Gerüchen, AMSR, Musik. Loslassen und genießen.<br>Gerne wieder und klare Empfehlung als Kurz-Wellness im Alltag.“</p>
+        <cite>Doris F.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Vielen lieben Dank, Aysun! Was für eine Erfahrung 😍 Danke für die unendlich entspannende und erholsame Behandlung und die liebe Atmosphäre! Freue mich schon aufs nächste Mal ❣️<br>Klare Empfehlung 🙏🏼“</p>
+        <cite>Katharina D.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Top zufrieden! Auf alle Fälle weiterzuempfehlen. Optimal zum Herunterkommen und vom Alltag abschalten.<br>Sehr kompetent und angenehm.“</p>
+        <cite>Doroteja D.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Meine 1. Head Spa Behandlung, ich freute mich so, weil endlich fand ich jemanden der das anbietet in der Nähe 🤩 bin voll zufrieden, ich ging total entspannt raus &amp; meine Haare sind sooo weich, klare Empfehlung 👍🏼“</p>
+        <cite>Jasmina<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Head-Spa-Behandlung war einfach traumhaft und total entspannend. Ich komme definitiv wieder und kann es nur weiterempfehlen!“</p>
+        <cite>Julie F.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Massage war pure Entspannung – ich hätte ewig bleiben können. Kann ich auf jeden Fall weiterempfehlen:)“</p>
+        <cite>Sümeyye E.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Headspa Behandlung war ein Traum, die Atmosphäre top, die ätherischen Öle sehr angenehm - Entspannung pur!“</p>
+        <cite>Jenny B.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Atmosphäre ist sehr angenehm und entspannend. Man fühlt sich sehr wohl,würde jedem einen Besuch empfehlen!🥰“</p>
+        <cite>Valeria A.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Aysun hat mir eine herrliche und wunderschöne Entspannungszeit bereitet. Absolute Top-Empfehlung!“</p>
+        <cite>Alexandra E.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super nette sympathische Dame und das Ambiente ist auch super. Man fühlt sich von Anfang an wohl!“</p>
+        <cite>Ha H.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte zum Ersten Mal so eine Behandlung und sicher nicht zum Letzten Mal. Absolut Empfehlenswert! 👌😍“</p>
+        <cite>Sandra M.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Kopfwäsche und die Massage waren großartig, ich werde wiederkommen, um mehr zu erfahren.😊“</p>
+        <cite>Adelina D.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ruhige entspannte Atmosphäre, ein besonderes Erlebnis. Eine 10/10 😇“</p>
+        <cite>Doris G.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Tolles Erlebnis, war sehr entspannend! 🙌🏼“</p>
+        <cite>Mona R.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ein Erlebnis der besonderen Art.<br>Sehr empfehlenswert!“</p>
+        <cite>Natascha N.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Werde definitiv wieder kommen. Es war so entspannend.“</p>
+        <cite>Michaela F.<span>Google</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Die Kontaktaufnahme war unkompliziert und sehr nett. Das Willkommen zum Termin war herzlich, und man fühlt sich in den stimmungsvollen Räumen sofort wohl. Bei einem Gespräch vor der Behandlung wurde die Vorgehensweise erklärt. Auf der bequemen Liege, in eine weiche Decke gehüllt, genießt man — es wird gekämmt, massiert, gestrichen, geölt, gesalbt, begleitet von sanften ASMR Geräuschen. Top! Sofort wieder."</p>
+        <cite>Martina<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wenn wer Entspannung sucht ist er hier bestens aufgehoben. Die Behandlung ist ganz einfach großartig, habe mich danach total entspannt gefühlt."</p>
+        <cite>Daniela<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe mir eine Gesichtsmassage gegönnt und war sehr zufrieden!"</p>
+        <cite>Susanne<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe mich rundherum wohl gefühlt. Ein kleiner Kurzurlaub, den ich öfter wiederholen möchte. Vielen lieben Dank dafür!"</p>
+        <cite>Bettina<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Noch nie fühlte sich meine Kopfhaut so entspannt und gepflegt an. Kann es jeden nur empfehlen der sich beim Relaxen auch was Gutes tun will."</p>
+        <cite>Manuela<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich bin wirklich beeindruckt! Die Atmosphäre, die Art von Aysun — alles dafür perfekt um sich entspannen zu können. Es war meine erste Head Spa, würde ich es aber jedem empfehlen!"</p>
+        <cite>Julia<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Sehr entspannend, habe mich hier sehr wohlgefühlt und kann es jedem empfehlen."</p>
+        <cite>Petra<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„War eine sehr entspannte Stunde. Haben uns sehr wohl gefühlt."</p>
+        <cite>Lisa<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Es war eine tolle, neue Erfahrung. Absolut empfehlenswert. Hab mich gleich total wohl gefühlt. Super schönes Ambiente. Entspannung pur."</p>
+        <cite>Sanja<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Den Salon hat Aysun sehr liebevoll gestaltet und lädt zum Entspannen ein! Meine Haare waren danach so gut gepflegt und die Behandlung fand ich großartig! Ein Ort zum Abschalten!"</p>
+        <cite>Katharina<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war das erste Mal bei MoonSun Headspa mit meiner Mama, wir hatten eine Doppelbehandlung und es war sooo entspannend. Das Team ist sehr sympathisch und herzlich und wir kommen auf alle Fälle wieder."</p>
+        <cite>Bettina<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich kann es jedem nur empfehlen! Entspannung pur!"</p>
+        <cite>Diana<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Das Studio ist wunderschön eingerichtet, man fühlt sich ab Sekunde 1 wohl und gut aufgehoben. Die Behandlung war Entspannung pur, ich komme sicher wieder!"</p>
+        <cite>Christiane<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wir hatten eine Behandlung zu zweit, es war sehr angenehm."</p>
+        <cite>Tanja<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich hatte die Behandlung Deep Relax und ich liebe sie!"</p>
+        <cite>Cathrin<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Es war sehr angenehm, man kann es nur weiter empfehlen."</p>
+        <cite>Barbara<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Es hat mir sehr gut getan. Sehr entspannend."</p>
+        <cite>Barbara<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Großartige entspannende Erfahrung, man kann wirklich abschalten!"</p>
+        <cite>Nika<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Es war wirklich ein super Erlebnis. Entspannung pur. Ich komme sicher wieder. Vielen Dank!"</p>
+        <cite>Sophie<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Tolles Erlebnis!"</p>
+        <cite>Martina<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Nice, friendly, honest and professional. Recommended!"</p>
+        <cite>Denise<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Mein Freund und ich haben die Behandlung sehr genossen und kommen bei Gelegenheit gerne wieder. Vielen Dank!"</p>
+        <cite>Jacqueline<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Es war extrem entspannend. Jederzeit wieder!!!"</p>
+        <cite>Helene<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich bin super entspannt von Aysun nach Hause gegangen! Vielen vielen Dank! Ich kanns nur jedem empfehlen, der sich eine kurze wunderbare Auszeit vom Alltag gönnen möchte."</p>
+        <cite>Conny<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super angenehm, die Behandlung war super entspannend. Kann es jeden nur empfehlen."</p>
+        <cite>Liane<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war das 2. Mal da, und es war wieder super. Meine Mama war aus Deutschland zu Besuch und ich habe ihr vorher eine Behandlung geschenkt. Sie war im 7. Himmel."</p>
+        <cite>Sabrina<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Großartig."</p>
+        <cite>Diana Sliwa<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Wird ein monatliches Ritual! War sehr entspannt und toll!"</p>
+        <cite>Simone<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Immer wieder eine super tolle entspannende Erfahrung! Immer wieder gerne."</p>
+        <cite>Valerie<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Durch einen glücklichen Zufall bin ich auf diesen Salon gestoßen. Die Partner-Kopfmassage war tiefenentspannend und obwohl ich sehr empfindliche Haut habe, habe ich alle verwendeten Produkte gut vertragen. Ich kann den Salon weiterempfehlen!"</p>
+        <cite>Tanja<span>Treatwell · Entspannungsmassage</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Einfach ein Traum! Super entspannende Behandlungen und sehr sehr freundlich. Man fühlt sich von Beginn bis Ende gut aufgehoben und einfach wohl."</p>
+        <cite>Daniela<span>Treatwell · Entspannungsmassage · Behandelt von Ajla</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super."</p>
+        <cite>Tanja<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Einfach unbeschreiblich toll! Kommen auf jeden Fall wieder! Herzensempfehlung!"</p>
+        <cite>Cornelia<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Unglaublich tolle Erfahrung! Sehr nette Person, man fühlt sich direkt wohl und ist danach sehr entspannt. Perfekt für jeden, der eine kurze Auszeit vom Alltag braucht."</p>
+        <cite>Denise<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Man kann es nur weiter empfehlen."</p>
+        <cite>Lisa<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super."</p>
+        <cite>Avdic<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich bin ein Mensch der schwer abschalten kann, aber ich bin so begeistert von dieser herrlichen Behandlung und währenddessen bin ich dann doch komplett entspannt. Alle Sinne werden berührt und beruhigt. Aysun, danke — du hast nicht nur meine Haut berührt, sondern mit deiner fürsorglichen Art auch meine Seele. Nach diesem Treatment ist nicht nur meine Kopfhaut sauber, sondern auch meine Gedanken gereinigt."</p>
+        <cite>Bettina<span>Treatwell · Kopfmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war mit einer Freundin dort, nur zum Empfehlen!"</p>
+        <cite>Manuela<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super tolle und entspannende Behandlung!"</p>
+        <cite>Verena<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Schöne, entspannte Auszeit vom Alltag, sehr zu empfehlen."</p>
+        <cite>Lea<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Es war vom Empfang bis zum Schluss alles super! Die Behandlung war so toll, hab mich super entspannen können. Die Atmosphäre — traumhaft. Und es waren beide so so lieb! Absolut empfehlenswert."</p>
+        <cite>Janine<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe mich in den Händen von Aysun sehr wohl gefühlt."</p>
+        <cite>Theresa<span>Treatwell · Kopfmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Es war eine sehr angenehme Behandlung. Habe es auch weiter empfohlen, weil es wirklich mal was anderes ist."</p>
+        <cite>Cornelia<span>Treatwell · Entspannungsmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Super Atmosphäre! Alles sauber und gepflegt! Sehr netter Empfang! Alles top — nur zum weiterempfehlen!"</p>
+        <cite>Diana<span>Treatwell · Kopfmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich war letzte Woche bei Aysun und ich hab mich sooo unglaublich wohl gefühlt bei ihr. Bei der Behandlung fühlte ich mich, als wär ich in einer anderen Welt abgetaucht — unglaublich wie sie das gemacht hat!! Ich kann Aysun auf alle Fälle von Herzen empfehlen!"</p>
+        <cite>Birgit Trimmel<span>Treatwell · Kopfmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Einfach rundum zufrieden und vollständig entspannt."</p>
+        <cite>Stefanie<span>Treatwell · Kopfmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Bin total begeistert. Die Behandlung war entspannend, angenehm und Aysun Arslan war auch sehr freundlich und herzlich. Man fühlt sich dort richtig wohl. Es lohnt sich sehr."</p>
+        <cite>Lisa<span>Treatwell · Kopfmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+      <blockquote class="review fade-in">
+        <span class="stars">★★★★★</span>
+        <p>„Ich habe mich bei Aysun total wohl gefühlt. Die Atmosphäre war super entspannend. Kann ich nur weiterempfehlen."</p>
+        <cite>Barbara<span>Treatwell · Kopfmassage · Behandelt von Aysun</span></cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--beige cta">
+  <div class="wrap">
+    <span class="label fade-in">Werde auch du Teil dieser Erfahrungen</span>
+    <h2 class="fade-in">Deine Ruhe wartet.</h2>
+    <div class="btn-row fade-in">
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" rel="noopener" class="btn btn--dark">Jetzt Termin buchen</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="../images/logo-gold.png" alt="Moon &amp; Sun Head Spa" class="footer-logo" width="600" height="501" loading="lazy">
+        <address>
+          Unterwagramerstraße 47/2<br>3100 St. Pölten<br>
+          <a href="tel:+4369010085496">+43 690 10085496</a><br>
+          <a href="mailto:moon_sunheadspa@hotmail.com">moon_sunheadspa@hotmail.com</a>
+        </address>
+        <p class="muted" style="margin-top:1rem;font-size:0.82rem;">Kostenlose Parkplätze direkt vor dem Haus.<br>Barzahlung oder Kartenzahlung (Debitkarte, Mastercard).</p>
         <div class="footer-social">
-          <a href="https://www.instagram.com/moon_sunheadspa/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-          <a href="https://www.facebook.com/Moonsunheadspa" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://www.instagram.com/moon_sunheadspa/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.facebook.com/Moonsunheadspa" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <a href="../index.html">Home</a>
-        <a href="angebote-astral-aura.html">Astral Aura Ritual</a>
-        <a href="angebote-together.html">Astral Aura Together</a>
-        <a href="angebote-nacken.html">Nacken & Schulter</a>
-        <a href="angebote-kobido.html">Kobido Lifting</a>
-        <a href="ueber-uns.html">Über uns</a>
-        <a href="bewertungen.html">Bewertungen</a>
-        <a href="preisliste.html">Preisliste</a>
-        <a href="gutscheine.html">Gutscheine</a>
-        <a href="schulungen.html">Schulungen</a>
-        <a href="rahmenbedingungen.html">Rahmenbedingungen</a>
+      <div>
+        <h4>Angebote</h4>
+        <ul>
+          <li><a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a></li>
+          <li><a href="angebote-together.html">Astral Aura Together</a></li>
+          <li><a href="angebote-nacken.html">ASMR Nacken &amp; Schulter</a></li>
+          <li><a href="angebote-kobido.html">ASMR Kobido Lifting &amp; Kosmetik</a></li>
+          <li><a href="angebote-body-kur.html">Body Kur</a></li>
+          <li><a href="angebote-better-pelvi.html">Better Pelvi</a></li>
+        </ul>
       </div>
-      <div class="footer-col">
-        <h4>Kontakt</h4>
-        <p>+43 690 10085496</p>
-        <a href="mailto:moon_sunheadspa@hotmail.com">moon_sunheadspa@hotmail.com</a>
-        <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-footer" style="display:inline-flex; align-items:center; justify-content:center; text-align:center;">Termin buchen</a>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="preisliste.html">Preise</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="bewertungen.html">Bewertungen</a></li>
+          <li><a href="gutscheine.html">Gutscheine</a></li>
+          <li><a href="schulungen.html">Schulungen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="rahmenbedingungen.html">Rahmenbedingungen</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz &amp; Widerruf</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Moon & Sun Head Spa · Aysun Arslan</p>
-      <div class="footer-legal">
-        <a href="impressum.html">Impressum</a><a href="agb.html">AGB</a><a href="datenschutz.html">Datenschutz</a>
-      </div>
+      <span>© 2026 Moon &amp; Sun Head Spa · Aysun Arslan</span>
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" rel="noopener" class="text-link">Termin buchen →</a>
     </div>
-    <p class="footer-disclaimer">Alle Behandlungen dienen der Entspannung, Prävention und dem allgemeinen Wohlbefinden. Sie ersetzen keine medizinische oder therapeutische Behandlung.</p>
+    <p class="footer-disclaimer">Alle Behandlungen dienen der Entspannung, Prävention und dem allgemeinen Wohlbefinden. Sie ersetzen keine medizinische oder therapeutische Behandlung. Das Astral Aura Ritual Head Spa® ist eine markengeschützte Behandlungsmethode.</p>
   </div>
 </footer>
+
 <div class="cookie-banner" id="cookieBanner">
-  <div class="cookie-text"><p>Wir verwenden Cookies. <a href="datenschutz.html">Datenschutzerklärung</a></p></div>
+  <p>Wir verwenden Cookies. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
   <div class="cookie-actions">
     <button class="cookie-accept" id="cookieAccept">Akzeptieren</button>
     <button class="cookie-decline" id="cookieDecline">Ablehnen</button>
   </div>
 </div>
-<a href="https://calendly.com/moon_sunheadspa" target="_blank" class="mobile-sticky-cta">Termin buchen</a>
+
 <script src="../js/main.js"></script>
 </body>
 </html>

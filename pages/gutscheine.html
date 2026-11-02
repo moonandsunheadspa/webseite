@@ -3,205 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gutscheine – Moon & Sun Head Spa St. Pölten</title>
-  <meta name="description" content="Verschenke pure Auszeit. Wertgutscheine von Moon & Sun Head Spa – für alle Rituale einlösbar.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .gutschein-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin: 3rem 0;
-    }
-    .gutschein-card {
-      border: 1px solid rgba(201,169,110,0.35);
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-      transition: border-color 0.4s, background 0.4s;
-    }
-    .gutschein-card:hover {
-      border-color: var(--gold);
-      background: rgba(201,169,110,0.04);
-    }
-    .gutschein-betrag {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 3rem;
-      color: var(--gold-light);
-      letter-spacing: 0.02em;
-      line-height: 1;
-    }
-    .gutschein-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin-top: 0.7rem;
-    }
-    .iban-box {
-      border: 1px solid rgba(201,169,110,0.25);
-      padding: 2.5rem 3rem;
-      margin: 3rem 0;
-      text-align: center;
-    }
-    .iban-box .iban-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1.2rem;
-    }
-    .iban-box .iban-number {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.7rem;
-      color: #ffffff;
-      letter-spacing: 0.08em;
-      margin-bottom: 0.5rem;
-    }
-    .iban-box .iban-detail {
-      font-size: 0.82rem;
-      color: #ffffff;
-      margin-top: 0.3rem;
-    }
-    .ablauf-step {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.8rem;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid rgba(201,169,110,0.08);
-    }
-    .ablauf-step:last-child { border-bottom: none; }
-    .ablauf-number {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.2rem;
-      color: var(--gold);
-      min-width: 2.5rem;
-      line-height: 1;
-    }
-    .ablauf-text h4 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem;
-      color: var(--gold-light);
-      margin-bottom: 0.4rem;
-    }
-    .ablauf-text p {
-      font-size: 0.88rem;
-      color: #ffffff;
-      line-height: 1.7;
-    }
-    .hinweis-box {
-      border-left: 2px solid rgba(201,169,110,0.3);
-      padding: 1.2rem 1.8rem;
-      margin-top: 2.5rem;
-      font-size: 0.85rem;
-      color: #ffffff;
-      line-height: 1.7;
-    }
-    @media (max-width: 600px) {
-      .iban-box { padding: 2rem 1.2rem; }
-      .iban-box .iban-number { font-size: 1.2rem; }
-      .gutschein-betrag { font-size: 2.4rem; }
-    }
-    }
-  </style>
+  <title>Gutscheine – Moon &amp; Sun Head Spa St. Pölten</title>
+  <meta name="description" content="Verschenke pure Auszeit. Wertgutscheine von Moon &amp; Sun Head Spa – für alle Rituale einlösbar.">
+  <link rel="stylesheet" href="../css/site.css?v=10">
 </head>
 <body>
-  <div id="header-placeholder"></div>
-
-  <div class="subpage-banner">
-    <span class="eyebrow">Verschenke pure Auszeit</span>
-    <h1>Gutscheine</h1>
-    <p>Ein Geschenk, das wirklich ankommt. Für dich selbst oder für jemanden, dem du etwas Besonderes gönnen möchtest.</p>
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="site-logo"><img src="../images/logo-gold.png" alt="Moon &amp; Sun Head Spa" width="600" height="501"></a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <div class="nav-dropdown">
+        <button type="button" aria-haspopup="true">Angebote</button>
+        <div class="dropdown-menu">
+          <a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a>
+          <a href="angebote-together.html">Astral Aura Together</a>
+          <a href="angebote-nacken.html">ASMR Nacken &amp; Schulter</a>
+          <a href="angebote-kobido.html">ASMR Kobido Lifting &amp; Kosmetik</a>
+          <a href="angebote-body-kur.html">Body Kur</a>
+          <a href="angebote-better-pelvi.html">Better Pelvi</a>
+        </div>
+      </div>
+      <a href="preisliste.html">Preise</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="bewertungen.html">Bewertungen</a>
+      <a href="gutscheine.html" aria-current="page">Gutscheine</a>
+    </nav>
+    <div class="header-end">
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" rel="noopener" class="btn header-cta">Termin buchen</a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
   </div>
+</header>
 
-  <!-- INTRO -->
-  <section class="section-dark">
-    <div class="container-narrow">
-      <span class="eyebrow fade-in">Wertgutscheine</span>
-      <h2 class="fade-in fade-in-delay-1">Für alle Rituale einlösbar</h2>
-      <p class="fade-in fade-in-delay-2" style="color:#ffffff; margin-top:1.2rem;">Unsere Gutscheine sind Wertgutscheine. Das bedeutet, sie sind frei für jedes unserer angebotenen Rituale verwendbar. Du wählst einfach einen Betrag, der dir entspricht, und die beschenkte Person entscheidet bei der Terminbuchung, welches Ritual sie damit genießen möchte.</p>
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <button class="close-btn" id="mobileNavClose" aria-label="Menü schließen">✕</button>
+  <div class="group">
+    <span class="label">Angebote</span>
+    <a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a>
+    <a href="angebote-together.html">Astral Aura Together</a>
+    <a href="angebote-nacken.html">ASMR Nacken &amp; Schulter</a>
+    <a href="angebote-kobido.html">ASMR Kobido Lifting &amp; Kosmetik</a>
+    <a href="angebote-body-kur.html">Body Kur</a>
+    <a href="angebote-better-pelvi.html">Better Pelvi</a>
+  </div>
+  <div class="group">
+    <a href="../index.html">Home</a>
+    <a href="preisliste.html">Preise</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="bewertungen.html">Bewertungen</a>
+    <a href="gutscheine.html">Gutscheine</a>
+    <a href="schulungen.html">Schulungen</a>
+  </div>
+  <a href="https://calendly.com/moon_sunheadspa" target="_blank" rel="noopener" class="btn">Termin buchen</a>
+  <p class="phone"><a href="tel:+4369010085496" style="font-family:inherit;font-size:inherit;display:inline;color:inherit;">+43 690 10085496</a></p>
+</div>
+
+<main>
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="label">Verschenke pure Auszeit</span>
+    <h1>Gutscheine</h1>
+    <p class="lead">Ein Geschenk, das wirklich ankommt. Für dich selbst oder für jemanden, dem du etwas Besonderes gönnen möchtest.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <span class="label fade-in">Wertgutscheine</span>
+    <h2 class="fade-in" style="margin-bottom:1.5rem;">Für alle Rituale einlösbar</h2>
+    <p class="fade-in">Unsere Wertgutscheine gelten für alle Rituale. Du wählst den Betrag, die beschenkte Person sucht sich bei der Buchung ihr Ritual aus.</p>
+  </div>
+</section>
+
+<div class="photo-band fade-in">
+  <img src="../images/empfang.jpeg" alt="Empfang bei Moon &amp; Sun Head Spa" width="2048" height="1536" loading="lazy">
+</div>
+
+<section class="section section--alt">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="label fade-in">So einfach geht es</span>
+      <h2 class="fade-in">Der Weg zu deinem Gutschein</h2>
     </div>
-  </section>
-
-  <div class="section-divider fade-in"><span>✦</span></div>
-
-  <!-- ABLAUF -->
-  <section class="section-dark">
-    <div class="container-narrow">
-      <span class="eyebrow fade-in">So einfach geht es</span>
-      <h2 class="fade-in fade-in-delay-1">Der Weg zu deinem Gutschein</h2>
-
-      <div style="margin-top:2.5rem;">
-        <div class="ablauf-step fade-in">
-          <div class="ablauf-number">1</div>
-          <div class="ablauf-text">
-            <h4>Betrag wählen und uns schreiben</h4>
-            <p>Du entscheidest, welchen Wert dein Gutschein haben soll. Wähle ab 50 Euro, je nachdem, was du verschenken oder dir selbst gönnen möchtest. Schreib uns anschließend per E-Mail, welchen Gutscheinwert du möchtest.</p>
-          </div>
-        </div>
-        <div class="ablauf-step fade-in">
-          <div class="ablauf-number">2</div>
-          <div class="ablauf-text">
-            <h4>Betrag überweisen</h4>
-            <p>Nach dem Senden der E-Mail, überweise den gewählten Betrag auf unser Konto (siehe Bankverbindung unten). Bitte gib im Verwendungszweck den Namen der Person an, die die Zahlung durchführt. Nach der Überweisung schick mir bitte kurz die Zahlungsbestätigung, damit ich dir den Gutschein anschließend zusenden kann.</p>
-          </div>
-        </div>
-        <div class="ablauf-step fade-in">
-          <div class="ablauf-number">3</div>
-          <div class="ablauf-text">
-            <h4>Gutschein als PDF erhalten</h4>
-            <p>Sobald deine Überweisung bei uns eingelangt ist, erhältst du deinen Gutschein als schönes PDF per E-Mail, gemeinsam mit der Rechnung. Das dauert in der Regel wenige Tage.</p>
-          </div>
-        </div>
-        <div class="ablauf-step fade-in">
-          <div class="ablauf-number">4</div>
-          <div class="ablauf-text">
-            <h4>Termin ausmachen und genießen</h4>
-            <p>Mit dem Gutschein kannst du jederzeit einen Termin buchen. Einfach per Mail, WhatsApp oder Anruf bei uns melden, und wir organisieren alles für dich. Möchtest du deinen Termin schon wahrnehmen, bevor das PDF bei dir angekommen ist? Kein Problem. Ruf uns einfach an, mach einen Termin aus und erwähne im Gespräch kurz, dass du bereits einen Gutschein bezahlt hast. Wir berücksichtigen das selbstverständlich und freuen uns auf dich. Gutscheine können gerne auch vor Ort abgeholt werden. Bitte vereinbare dafür vorab einen Termin, da wir uns während laufender Behandlungen nicht um Abholungen kümmern können. </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- IBAN BOX -->
-      <div class="iban-box fade-in" style="margin-top:3.5rem;">
-        <div class="iban-label">Bankverbindung</div>
-        <div class="iban-number">AT57 1500 0002 3111 5262</div>
-        <div class="iban-detail">BIC: OBKLAT2L</div>
-        <div class="iban-detail" style="margin-top:0.8rem;">Oberbank &nbsp;·&nbsp; Aysun Arslan</div>
-        <div class="iban-detail" style="margin-top:1.2rem; color:#ffffff; font-size:0.858rem;">Verwendungszweck: Name der Person, die die Zahlung durchführt.</div>
-      </div>
-
-      <!-- HINWEISE -->
-      <div class="hinweis-box fade-in">
-        <p><strong style="color:var(--gold-light);">Noch kein PDF erhalten, aber Termin gewünscht?</strong><br>
-        Kein Problem. Wenn du bereits überwiesen hast und auf dein PDF wartest, kannst du selbstverständlich schon einen Termin ausmachen. Gib uns beim Buchen einfach kurz Bescheid, dass du einen Gutschein bezahlt hast und auf die Bestätigung wartest. Du kannst deinen Termin ohne weiteres wahrnehmen.</p>
-      </div>
-
-      <div class="hinweis-box fade-in" style="margin-top:1.5rem;">
-        <p><strong style="color:var(--gold-light);">Gutscheine bitte nicht vor Ort abholen.</strong><br>
-        Da alle unsere Rituale vollkommene Ruhe erfordern, bitten wir dich, deinen Gutschein bevorzugt digital per E-Mail zu beziehen. Persönliche Abholung ist nach vorheriger Terminvereinbarung möglich. Bitte lies dazu auch unsere  <a href="rahmenbedingungen.html" style="color:var(--gold-light);">Rahmenbedingungen</a>.</p>
+    <div class="steps">
+      <div class="step fade-in"><div>
+        <h3>Betrag wählen und uns schreiben</h3>
+        <p>Wähle einen Wert ab 50 € und schreib uns per E-Mail, welchen Gutscheinwert du möchtest.</p>
+      </div></div>
+      <div class="step fade-in"><div>
+        <h3>Betrag überweisen</h3>
+        <p>Überweise den Betrag auf unser Konto (Bankverbindung unten), mit dem Namen der zahlenden Person als Verwendungszweck. Schick uns danach kurz die Zahlungsbestätigung.</p>
+      </div></div>
+      <div class="step fade-in"><div>
+        <h3>Gutschein als PDF erhalten</h3>
+        <p>Sobald die Überweisung da ist, bekommst du den Gutschein als PDF per E-Mail, zusammen mit der Rechnung. Das dauert meist wenige Tage.</p>
+      </div></div>
+      <div class="step fade-in"><div>
+        <h3>Termin ausmachen und genießen</h3>
+        <p>Termin per Mail, WhatsApp oder Anruf ausmachen. Das geht auch schon, bevor das PDF da ist: Sag einfach kurz dazu, dass du den Gutschein bereits bezahlt hast.</p>
+      </div></div>
+    </div>
+    <div class="bank fade-in" style="margin-top:3rem;">
+      <span class="label">Bankverbindung</span>
+      <div class="iban">AT57 1500 0002 3111 5262</div>
+      <p>BIC: OBKLAT2L</p>
+      <p>Oberbank · Aysun Arslan</p>
+      <p>Verwendungszweck: Name der Person, die die Zahlung durchführt.</p>
+    </div>
+    <div style="margin-top:2rem;">
+      <div class="note fade-in">
+        <strong>Gutscheine abholen nur mit Terminvereinbarung.</strong>
+        Du kannst deinen Gutschein gerne persönlich bei uns abholen. Da wir uns während der Rituale ganz unseren Gästen widmen, bitten wir dich, vorher kurz einen Termin zu vereinbaren. Alternativ schicken wir dir deinen Gutschein digital per E-Mail. Bitte lies dazu auch unsere <a href="rahmenbedingungen.html">Rahmenbedingungen</a>.
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <div class="section-divider fade-in"><span>✦</span></div>
+<!-- CTA -->
+<section class="section section--beige cta">
+  <div class="wrap">
+    <span class="label fade-in">Bereit?</span>
+    <h2 class="fade-in">Wir freuen uns auf deine Nachricht.</h2>
+    <p class="fade-in">Bei Fragen zum Gutschein erreichst du uns jederzeit per Mail, WhatsApp oder Anruf.</p>
+    <div class="btn-row fade-in">
+      <a href="mailto:moon_sunheadspa@hotmail.com" class="btn btn--dark">E-Mail schreiben</a>
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" rel="noopener" class="btn btn--dark">Termin buchen</a>
+    </div>
+  </div>
+</section>
 
-  <!-- CTA -->
-  <section style="background:var(--black);padding:6rem 2rem;text-align:center;">
-    <span class="eyebrow fade-in">Bereit?</span>
-    <h2 class="fade-in fade-in-delay-1">Wir freuen uns auf deine Nachricht.</h2>
-    <p class="fade-in fade-in-delay-2" style="color:#ffffff; margin-top:1rem; margin-bottom:2.5rem;">Bei Fragen zum Gutschein erreichst du uns jederzeit per Mail, WhatsApp oder Anruf.</p>
-    <a href="https://calendly.com/moon_sunheadspa" target="_blank" class="btn-beige fade-in fade-in-delay-2">Termin buchen →</a>
-  </section>
+</main>
 
-  <div id="footer-placeholder"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="../images/logo-gold.png" alt="Moon &amp; Sun Head Spa" class="footer-logo" width="600" height="501" loading="lazy">
+        <address>
+          Unterwagramerstraße 47/2<br>3100 St. Pölten<br>
+          <a href="tel:+4369010085496">+43 690 10085496</a><br>
+          <a href="mailto:moon_sunheadspa@hotmail.com">moon_sunheadspa@hotmail.com</a>
+        </address>
+        <p class="muted" style="margin-top:1rem;font-size:0.82rem;">Kostenlose Parkplätze direkt vor dem Haus.<br>Barzahlung oder Kartenzahlung (Debitkarte, Mastercard).</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/moon_sunheadspa/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.facebook.com/Moonsunheadspa" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Angebote</h4>
+        <ul>
+          <li><a href="angebote-astral-aura.html">Astral Aura Ritual Head Spa®</a></li>
+          <li><a href="angebote-together.html">Astral Aura Together</a></li>
+          <li><a href="angebote-nacken.html">ASMR Nacken &amp; Schulter</a></li>
+          <li><a href="angebote-kobido.html">ASMR Kobido Lifting &amp; Kosmetik</a></li>
+          <li><a href="angebote-body-kur.html">Body Kur</a></li>
+          <li><a href="angebote-better-pelvi.html">Better Pelvi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="preisliste.html">Preise</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="bewertungen.html">Bewertungen</a></li>
+          <li><a href="gutscheine.html">Gutscheine</a></li>
+          <li><a href="schulungen.html">Schulungen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="rahmenbedingungen.html">Rahmenbedingungen</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz &amp; Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Moon &amp; Sun Head Spa · Aysun Arslan</span>
+      <a href="https://calendly.com/moon_sunheadspa" target="_blank" rel="noopener" class="text-link">Termin buchen →</a>
+    </div>
+    <p class="footer-disclaimer">Alle Behandlungen dienen der Entspannung, Prävention und dem allgemeinen Wohlbefinden. Sie ersetzen keine medizinische oder therapeutische Behandlung. Das Astral Aura Ritual Head Spa® ist eine markengeschützte Behandlungsmethode.</p>
+  </div>
+</footer>
 
-  <script src="../js/components.js"></script>
-  <script>
-    document.getElementById('header-placeholder').innerHTML = renderSubpageHeader('../');
-    document.getElementById('footer-placeholder').innerHTML = renderFooter('../');
-  </script>
-  <script src="../js/main.js"></script>
+<div class="cookie-banner" id="cookieBanner">
+  <p>Wir verwenden Cookies. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  <div class="cookie-actions">
+    <button class="cookie-accept" id="cookieAccept">Akzeptieren</button>
+    <button class="cookie-decline" id="cookieDecline">Ablehnen</button>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
 </body>
 </html>

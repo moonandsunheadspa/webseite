@@ -27,6 +27,8 @@ function renderFooter(rootPath = '') {
         <a href="${rootPath}pages/angebote-together.html">Astral Aura Together</a>
         <a href="${rootPath}pages/angebote-nacken.html">Nacken & Schulter Rituale</a>
         <a href="${rootPath}pages/angebote-kobido.html">ASMR Kobido Lifting</a>
+        <a href="${rootPath}pages/angebote-body-kur.html">Body Kur</a>
+        <a href="${rootPath}pages/angebote-better-pelvi.html">Better Pelvi</a>
         <a href="${rootPath}pages/ueber-uns.html">Über uns</a>
         <a href="${rootPath}pages/bewertungen.html">Bewertungen</a>
         <a href="${rootPath}pages/preisliste.html">Preisliste</a>
@@ -83,6 +85,8 @@ function renderSubpageHeader(rootPath = '') {
         <a href="${rootPath}pages/angebote-together.html">Astral Aura Together</a>
         <a href="${rootPath}pages/angebote-nacken.html">ASMR Nacken- & Schulter-Rituale</a>
         <a href="${rootPath}pages/angebote-kobido.html">ASMR Kobido Lifting & Kosmetik</a>
+        <a href="${rootPath}pages/angebote-body-kur.html">Body Kur</a>
+        <a href="${rootPath}pages/angebote-better-pelvi.html">Better Pelvi – Beckenbodentraining</a>
       </div>
     </div>
     <a href="${rootPath}pages/ueber-uns.html">Über uns</a>
@@ -106,6 +110,8 @@ function renderSubpageHeader(rootPath = '') {
   <a href="${rootPath}pages/angebote-together.html">Astral Aura Together</a>
   <a href="${rootPath}pages/angebote-nacken.html">Nacken & Schulter</a>
   <a href="${rootPath}pages/angebote-kobido.html">Kobido Lifting</a>
+  <a href="${rootPath}pages/angebote-body-kur.html">Body Kur</a>
+  <a href="${rootPath}pages/angebote-better-pelvi.html">Better Pelvi</a>
   <a href="${rootPath}pages/ueber-uns.html">Über uns</a>
   <a href="${rootPath}pages/bewertungen.html">Bewertungen</a>
   <a href="${rootPath}pages/preisliste.html">Preisliste</a>
